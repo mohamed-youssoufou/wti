@@ -1,0 +1,23 @@
+body {
+    background: #fff;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(~assets/fonts/gfont.woff2);
+}
+
+@font-face {
+    font-family: fsb;
+    src: url('~assets/fonts/Freight Sans Black SC.otf');
+}
+
+@font-face {
+    font-family: fsl;
+    src: url('~assets/fonts/Freight Sans Light.otf');
+}
+
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('~assets/fonts/SpaceGrotesk-Bold.otf');
+}
