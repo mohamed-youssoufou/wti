@@ -55,7 +55,7 @@
               width: 1,
             },
             collisions: {
-              enable: true,
+              enable: false,
             },
             move: {
               direction: 'none',
@@ -151,7 +151,8 @@ export default {};
   z-index: 1;
   overflow: hidden;
   position: relative;
-  background: url(~assets/img/blockchainis.jpeg) no-repeat center center; 
+  /* background: url(~assets/img/blockchainis.jpeg) no-repeat center center;  */
+  background-color: rgb(19, 22, 26);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -160,7 +161,7 @@ export default {};
 	
   /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
+
 	
   /* Set up positioning */
   /* position: fixed;
