@@ -86,8 +86,8 @@
           detectRetina: true,
         }"
       />
-      <div class="container-fluid work" style="z-index: 5">
-        <div class="col-sm-12">
+      <div class="container-fluid" style="z-index: 5">
+        <!-- <div class="col-sm-12">
           <div class="main1 d-flex align-items-center">
             <div class="big-circle">
               <div class="icon-block">
@@ -130,7 +130,7 @@
               <img src="images/egm_fly_icon.png" class="logo" />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

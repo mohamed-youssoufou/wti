@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-4">
     <div class="row">
-      <h2 class="col-md-12 title">Nos services</h2>
+      <h2 class="col-md-12 title">Nos services_</h2>
       <p class="col-md-12 btn-body-text">
         Wealthtech Innovations accompagne les particuliers, les associations,
         les organisations, les institutions dans la découverte, l’exploration et

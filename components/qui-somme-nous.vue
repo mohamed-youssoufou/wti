@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-4">
     <div class="row">
-      <h2 class="col-md-12 title">Qui sommes nous ?</h2>
+      <h2 class="col-md-12 title">Qui sommes nous_ ?</h2>
       <div class="col-md-12">
         <p class="btn-body-text">
           Wealthtequich innovation est une start-up spécialisée dans le
