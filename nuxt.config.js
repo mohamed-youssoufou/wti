@@ -62,7 +62,8 @@ export default {
     ['nuxt-gmaps', {
       key: 'AIzaSyCMo6DieI9jDuutybzKEPrzmQ4_Nr2hTng',
       //you can use libraries: ['places']
-    }]
+    }],
+    // 'vue-typer'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

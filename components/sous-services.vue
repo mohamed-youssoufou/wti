@@ -55,6 +55,9 @@ export default {
         slidesToShow: 3,
         slidesToScroll: 3,
         touchThreshold: 5,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnDotsHover: true,
         arrows: true,
         responsive: [
           {
@@ -223,6 +226,7 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
 .title {
   font-family: fsl;
   font-weight: bolder;
+  color: white;
 }
 .cover-trios a.trio-cover {
   display: block;
@@ -245,7 +249,7 @@ a {
   background: #000000;
   border-radius: 50%;
   border: 0px solid white !important;
-  font-family: tahoma,;
+  font-family: tahoma;
 }
 .slick-arrow {
 }

@@ -41,7 +41,7 @@
     -webkit-justify-content: center;
     animation: Rotate 20s linear infinite;
     -webkit-animation: Rotate 20s linear infinite;
-    box-shadow: 0 0 25px 0 #ffe090;
+    box-shadow: 0 0 25px 0 #156fc4;
 }
 
 .icon-block {
@@ -58,7 +58,7 @@
     /*background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);*/
     -webkit-background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);
     box-shadow: 0 2px 4px 0 #3e5ada;
-    -webkit-box-shadow: 0 2px 4px 0 #e8a43e;
+    -webkit-box-shadow: 0 2px 4px 0 #156fc4;
     background: black;
 }
 

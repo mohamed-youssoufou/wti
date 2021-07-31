@@ -1,7 +1,10 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="">
-      <b-navbar-brand href="#"><img height="50px" width="100px" src="~/assets/img/log___.png"/></b-navbar-brand>
+      <b-navbar-brand href="#">
+        <div id="app_"></div>
+        <img height="50px" width="100px" src="~/assets/img/log___.png"
+      /></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -55,6 +58,26 @@
 
 <script>
 export default {
+  components: {},
+  mounted() {
+    var app = document.getElementById("app_");
+
+    var typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 75,
+    });
+    console.log(typewriter);
+
+    typewriter
+      .pauseFor(2500)
+      .typeString("wealthtech innovations")
+      .deleteChars(22)
+      .pauseFor(2500)
+      .typeString("wealthtech innovations")
+      .deleteChars(22)
+      .pauseFor(1000)
+      .start();
+  },
   created() {
     if (process.browser) {
       this.$nextTick(function () {
@@ -81,6 +104,21 @@ export default {
 </script>
 
 <style>
+.Typewriter__wrapper {
+  color: #fafafa;
+  font-weight: bolder;
+}
+#app_ {
+  color: white;
+  line-height: 50px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  font-size: 10px;
+}
 .navbar {
   font-family: fsl;
   border-width: 0 0 1px 0;
@@ -109,7 +147,7 @@ export default {
 .navbar.sticky + .content {
   padding-top: 60px;
 }
-.nav-link{
+.nav-link {
   color: white !important;
 }
 </style>

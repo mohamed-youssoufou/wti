@@ -2,43 +2,43 @@
 <template>
   <div id="app">
     <div class="banner align-item-center">
-      <div class="main1 d-flex align-items-center">
+      <div class="main1 mt-4 d-flex align-items-center">
         <div class="big-circle">
           <div class="icon-block">
-            <img src="images/accepted-worldwide.svg" alt="web design icon" />
+            <img src="~/assets/img/1.png" alt="web design icon" />
           </div>
           <div class="icon-block">
             <img
-              src="images/decentralised-currency.svg"
+              src="~/assets/img/2.png"
               alt="game design icon"
             />
           </div>
           <div class="icon-block">
-            <img src="images/safe-and-secure.svg" alt="game dev icon" />
+            <img src="~/assets/img/1.png" alt="game dev icon" />
           </div>
           <div class="icon-block">
-            <img src="images/5.png" alt="ui-ux icon" />
+            <img src="~/assets/img/2.png" alt="ui-ux icon" />
           </div>
         </div>
         <div class="circle">
           <div class="icon-block">
-            <img src="images/fast-transaction.svg" alt="app icon" />
+            <img src="~/assets/img/2.png" alt="app icon" />
           </div>
           <div class="icon-block">
-            <img src="images/bit4.png" alt="blockchain icon" />
+            <img src="~/assets/img/1.png" alt="blockchain icon" />
           </div>
           <div class="icon-block">
-            <img src="images/ico2.3-2048x2048.png" alt="ar-vr icon" />
+            <img src="~/assets/img/2.png" alt="ar-vr icon" />
           </div>
           <div class="icon-block">
             <img
-              src="images/ico2-2048x2048.png"
+              src="~/assets/img/1.png"
               alt="artificial intelligence icon"
             />
           </div>
         </div>
         <div class="center-logo">
-          <img src="images/egm_fly_icon.png" class="logo" />
+          <img src="~/assets/img/logo_wealth.png" height="200" width="100" class="logo" />
         </div>
       </div>
     </div>
@@ -46,35 +46,33 @@
 </template>
 
 <script>
-export default {};
+
+
+export default {
+  
+
+};
 </script>
 
 <style scoped>
-.work {
-  position: absolute;
-  top: 20%;
-  z-index: 5;
-  height: 100%;
+
+#app{
+  background-color:rgba(0, 0, 0, 0);
 }
+
 .banner {
-  z-index: 1;
   overflow: hidden;
   position: relative;
-  /* background: url(~assets/img/blockchainis.jpeg) no-repeat center center;  */
-  /* background-color: rgb(19, 22, 26); */
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-color:rgba(0, 0, 0, 0);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 100%;
-
-  /* Set up proportionate scaling */
+  min-height: 1000px;
   width: 100%;
-
-  /* Set up positioning */
-  /* position: fixed;
-  top: 0;
-  left: 0; */
 }
 
 @media (max-width: 1440px) {

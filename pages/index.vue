@@ -104,7 +104,7 @@
           class="nos-services"
         />
       </section>
-      <section>
+      <section class="sous-services">
         <sous-services id="element" :parentId="parentId" />
       </section>
       <section class="nos-convictions">
@@ -126,6 +126,7 @@
         <foot />
       </section>
     </main>
+     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </div>
 </template>
 
@@ -181,16 +182,15 @@ export default {
 </script>
 
 <style >
-.header {
-  position: relative;
-  z-index: 4;
+header {
+  background:black;
 }
 .index {
   position: relative;
 }
-html,
-body {
-  height: 100%;
+html, body {
+    width: 100%;
+    background-color:rgba(0, 0, 0, .0)!important;
 }
 main {
   background-color: black;
@@ -220,9 +220,10 @@ main {
 }
 .head-bg {
   position: relative;
-  z-index: 1;
+  z-index: 4;
   width: 100%;
   height: auto;
+  background-color:black;
 }
 .nos-services {
   position: relative;
@@ -250,6 +251,14 @@ main {
   z-index: 4;
 }
 .google-map {
+  position: relative;
+  z-index: 4;
+}
+.sous-services {
+  position: relative;
+  z-index: 4;
+}
+.nos-services {
   position: relative;
   z-index: 4;
 }
