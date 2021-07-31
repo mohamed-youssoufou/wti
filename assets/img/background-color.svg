@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 2284">
+  <defs>
+    <linearGradient id="linearGradient-1" x1="66.094%" x2="-23.48%" y1="36.832%" y2="10.419%">
+      <stop offset="0%" stop-color="#E94A61"/>
+      <stop offset="100%" stop-color="#95358C"/>
+    </linearGradient>
+    <linearGradient id="linearGradient-2" x1="78.164%" x2="35.313%" y1="56.786%" y2="44.125%">
+      <stop offset="0%" stop-color="#ABCF84"/>
+      <stop offset="50.502%" stop-color="#D5DE42"/>
+      <stop offset="100%" stop-color="#FE0"/>
+    </linearGradient>
+  </defs>
+  <g id="back-contact" fill="none" fill-rule="evenodd">
+    <polygon id="Rectangle" fill="url(#linearGradient-1)" points="879 1723 1440 1723 879 2284" transform="rotate(180 1159.5 2003.5)"/>
+    <polygon id="Rectangle" fill="url(#linearGradient-2)" points="1440 0 1440 844 0 2284 0 1440"/>
+  </g>
+</svg>

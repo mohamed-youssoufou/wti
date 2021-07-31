@@ -59,4 +59,12 @@ p.btn-body-text {
   align-items: flex-end;
   float: right;
 }
+@media screen and (min-width: 375px){
+  .title {
+    font-size: 40px;
+  }
+  .p.btn-body-text {
+    text-align: center;
+  }
+}
 </style>

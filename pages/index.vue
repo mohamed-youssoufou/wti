@@ -1,9 +1,93 @@
 <template>
   <div class="index">
     <loader v-if="loading" />
+    <Particles
+      id="tsparticles"
+      :options="{
+        background: {
+          color: {
+            value: 'rgba(0, 0, 0, 0.0)',
+          },
+          opacity: {
+            value: '0.5',
+          },
+        },
+        fpsLimit: 60,
+        interactivity: {
+          detectsOn: 'canvas',
+          events: {
+            onClick: {
+              enable: true,
+              mode: 'push',
+            },
+            onHover: {
+              enable: true,
+              mode: 'repulse',
+            },
+            resize: true,
+          },
+          modes: {
+            bubble: {
+              distance: 400,
+              duration: 2,
+              opacity: 0.8,
+              size: 40,
+            },
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: '#ffffff',
+          },
+          links: {
+            color: '#ffffff',
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: false,
+          },
+          move: {
+            direction: 'none',
+            enable: true,
+            outMode: 'bounce',
+            random: false,
+            speed: 2,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: 'circle',
+          },
+          size: {
+            random: true,
+            value: 5,
+          },
+        },
+        detectRetina: true,
+      }"
+    />
     <header class="h-100">
-      <headBg class="head-bg" />
       <navBar @myEvent="pushToSousService" class="nav-bar" />
+      <headBg class="head-bg" />
     </header>
     <main role="main">
       <section class="notre-mission">
@@ -31,6 +115,16 @@
       <section class="">
         <nos-projets />
       </section>
+      <section class="google-map mt-4">
+        <google-map />
+      </section>
+      <section class="contactez-nous">
+        <contactez-nous />
+      </section>
+
+      <section class="">
+        <foot />
+      </section>
     </main>
   </div>
 </template>
@@ -38,6 +132,7 @@
 <script>
 import Vue from "vue";
 import VueScrollTo from "vue-scrollto";
+import contactezNous from "../components/contactez-nous.vue";
 
 // Vue.use(VueScrollTo)
 
@@ -56,6 +151,7 @@ Vue.use(VueScrollTo, {
 });
 
 export default {
+  components: { contactezNous },
   mounted() {
     setTimeout(() => this.finish(), 2000);
   },
@@ -85,17 +181,39 @@ export default {
 </script>
 
 <style >
+.header {
+  position: relative;
+  z-index: 4;
+}
+.index {
+  position: relative;
+}
 html,
 body {
   height: 100%;
 }
-/* .notre-mission{
-  background-image: url('~/assets/img/spaceship.png');
-  background-repeat: no-repeat;
-  background-size: 300px;
-  background-position: 100px 100% 0% 0%;
+main {
+  background-color: black;
+}
+.notre-mission {
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  z-index: 4;
+}
 
-} */
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  z-index: 4;
+}
+
+.contactez-nous {
+  /* background: url("~/assets/img/background-color.svg") left bottom no-repeat; */
+  background-size: 100% auto;
+  position: relative;
+  z-index: 4;
+}
 
 .index {
   height: 100%;
@@ -116,16 +234,23 @@ body {
   z-index: 2;
 }
 .qui-some-nous {
-  background-color: #171f30;
+  position: relative;
+  z-index: 4;
 }
 .s-convictions {
-  background-color: #ffe100;
+  /* background-color: #ffe100; */
   position: relative;
   top: 25px;
-  box-shadow: 0 4px 2px -2px rgb(225, 223, 223);
+  position: relative;
+  z-index: 4;
 }
 .nos-convictions {
   position: relative;
-  background-image: url("~/assets/img/jaune.svg");
+  position: relative;
+  z-index: 4;
+}
+.google-map {
+  position: relative;
+  z-index: 4;
 }
 </style>

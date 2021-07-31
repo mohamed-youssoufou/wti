@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 card-main-element">
+  <div class="p-2 card-main-element" @click="changeService(id)" style="cursor: pointer">
     <!-- <div
       class="card"
       :style="'background-color:' + color + ';cursor:pointer'"
@@ -14,7 +14,7 @@
        
       </div>
     </div> -->
-    <div class="row" @click="changeService(id)" style="cursor: pointer">
+    <div class="row" >
       <div class="col-md-12">
         <div class="img" :style="{ backgroundImage: 'url(' + img + ')' }"></div>
       </div>
@@ -68,6 +68,8 @@ export default {
 <style scoped>
 .card-main-element {
   font-family: fsb;
+  background-color: white !important;
+  border: 4px solid black !important;
 }
 .img {
   background-size: cover;

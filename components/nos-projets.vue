@@ -161,9 +161,16 @@
         </div>
       </div>
       <div class="col-md-5 d-flex flex-wrap">
-        <div class="w-50 p-4 h-31 text-center project" v-for="projet in projects" :key="projet.id" :style="{border:'1px solid '+ projet.color}">
-          <p><span class="project_number">{{projet.id}}</span></p>
-          <p>{{projet.title}}</p>
+        <div
+          class="w-50 p-4 h-31 text-center project"
+          v-for="projet in projects"
+          :key="projet.id"
+          :style="{ border: '1px solid ' + projet.color }"
+        >
+          <p>
+            <span class="project_number">{{ projet.id }}</span>
+          </p>
+          <p>{{ projet.title }}</p>
         </div>
       </div>
       <!-- </div> -->
@@ -173,42 +180,43 @@
 
 <script>
 export default {
-  data(){
-    return{
+  data() {
+    return {
       projects: [
         {
           id: 1,
-          title: "Plateforme de distribution transfrontalière de fonds d’investissement",
-          color: "#E63946"
+          title:
+            "Plateforme de distribution transfrontalière de fonds d’investissement",
+          color: "#E63946",
         },
         {
           id: 2,
           title: "Plateforme de crowdfunding",
-          color: "#F1FAEE"
+          color: "#F1FAEE",
         },
         {
           id: 3,
           title: "Blockchain pour la gestion des titres de propriété",
-          color: "#A8DADC"
+          color: "#A8DADC",
         },
         {
           id: 4,
           title: "Blockchain pour la certification des diplômes",
-          color: "#457B9D"
+          color: "#457B9D",
         },
         {
           id: 5,
           title: "Cryptomonnaie à usage caritatif et social",
-          color: "#1D3557"
+          color: "#1D3557",
         },
-      ]
-    }
-  }
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped>
-.project_number{
+.project_number {
   border: 1px solid grey;
   padding-left: 10px;
   padding-right: 10px;
@@ -217,23 +225,24 @@ export default {
   background-color: #171f30;
   color: white;
 }
-.h-30{
-  height: 30%
+.h-30 {
+  height: 30%;
 }
-.project{
+.project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: fsl;
   font-size: 18px;
   font-weight: bolder;
+  color: #ffffff;
 }
 p.btn-body-text {
   margin-bottom: 0.875em;
   font-family: fsl, sans-serif;
   font-size: 32px;
   line-height: 1.5em;
-  color: currentColor;
+  color: #ffffff;
   margin-top: 0;
   width: 100%;
   max-width: 56rem;
@@ -298,11 +307,20 @@ p.btn-body-text {
   margin-left: 0;
   opacity: 1;
   font-family: Spacegrotesk, sans-serif;
-  color: #171f30;
+  color: #ffffff;
   font-size: 70px;
   line-height: 1.2em;
   font-weight: 700;
   text-align: left;
   padding-top: 20px;
+}
+@media screen and (min-width: 375px) {
+  .title {
+    font-size: 40px;
+    text-align: justify;
+  }
+  .p.btn-body-text {
+    justify-content: center;
+  }
 }
 </style>

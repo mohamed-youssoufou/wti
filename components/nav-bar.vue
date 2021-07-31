@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="">
-      <b-navbar-brand href="#">WTI</b-navbar-brand>
+      <b-navbar-brand href="#"><img height="50px" width="100px" src="~/assets/img/log___.png"/></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -82,9 +82,11 @@ export default {
 
 <style>
 .navbar {
+  font-family: fsl;
   border-width: 0 0 1px 0;
   position: fixed;
   width: 100%;
+  font-size: 1.2em;
   top: 0;
   left: 0;
   margin: 0;

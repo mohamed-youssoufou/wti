@@ -1,5 +1,5 @@
-body {
-    background: #fff;
+html, body {
+    width: 100%;
 }
 
 @font-face {
