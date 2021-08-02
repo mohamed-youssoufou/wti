@@ -4,7 +4,7 @@
       <div class="card-body">
         <h5 class="d-flex flex-row align-items-center card-title">
           <div class="pr-2">
-            <font-awesome-icon class="icone" :icon="['fab', icone]" />
+            <font-awesome-icon class="icone" :style="{color}" :icon="['fa', icone]" />
           </div>
           <div>
             {{ title }}
@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 export default {

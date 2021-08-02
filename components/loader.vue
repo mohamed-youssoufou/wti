@@ -2,7 +2,7 @@
   <div class="loader">
     <div class="content">
       <div class="loading">
-        <p>loading</p>
+        <p>chargement</p>
         <span></span>
       </div>
     </div>

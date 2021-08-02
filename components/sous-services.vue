@@ -80,7 +80,7 @@ export default {
           parentId: 1,
           id: 1,
           title: "Formations techniques",
-          icone: "linkedin",
+          icone: "graduation-cap",
           detail:
             "Pour les developpeurs, Nous proposons des formations techniques qui leur permettront de concevoir des architectures Blockchains spécifiques et adaptées au domaine d’activité.",
           color: "#4faaf0",
@@ -88,16 +88,16 @@ export default {
         {
           parentId: 1,
           id: 2,
-          icone: `linkedin`,
+          icone: `sitemap`,
           title: "Interventions COMEX",
           detail:
             "Nous intervenons auprès de vos dirigeants afin de leur donner une vision stratégique de l’utilité des blockchains et cryptoactifs.",
-          color: "#4feef0",
+          color: "#ffc20b",
         },
         {
           parentId: 1,
           id: 3,
-          icone: "linkedin",
+          icone: "link",
           title: "Interventions Métiers réglementés",
           detail:
             "Nous intervenons auprès des professionnels métier (professions règlements) dans l’optique de proposer des solutions basées sur les blockchains et cryptoactifs : « Spécific use cases ».",
@@ -106,7 +106,7 @@ export default {
         {
           parentId: 1,
           id: 4,
-          icone: "linkedin",
+          icone: "link",
           title: "Interventions Institutions publiques et privée",
           detail:
             "Nous intervenons auprès des institutions publiques et privée en tant que consultants ou formateurs afin de donner une vision stratégique de l’utilité des blockchains et cryptoactifs. Notre intervention peut s’étendre à la réflexion ou la réalisation de projet concrets",
@@ -115,34 +115,34 @@ export default {
         {
           parentId: 1,
           id: 5,
-          icone: "linkedin",
+          icone: "users",
           title: "Conférences tout public",
           detail: `Nous proposons des conférences en ligne Grand public pour Acculturer les particuliers, les équipes et les métiers aux impacts et avantages des blockchains et cryptoactifs.
 Ces conférences grand public vous permettront comprendre un projet lié aux cryptoactifs`,
-          color: "#9dedd1",
+          color: "#ffc20b",
         },
         {
           parentId: 2,
           id: 6,
-          icone: "linkedin",
+          icone: "chart-bar",
           title: "Consulting : Etudes et conseils stratégiques",
           detail: `Exploration des cas d’usage, études, analyse.
 Nos expertises sont au service de vos idées et de votre entreprise pour vous permettre d'imaginer de nouveaux services et d'assurer une implémentation réussie de la blockchain dans votre activité`,
-          color: "#9deff1",
+          color: "#ff0099",
         },
         {
           parentId: 2,
           id: 7,
-          icone: "linkedin",
+          icone: "chart-area",
           title: "Analyse et optimisation des projets",
           detail: `Nous étudions en détail votre projet et vous proposons des plans fonctionnels et techniques.
            Nous analysons votre projet afin de réduire les risques, les coûts associés et garantir une utilisation optimale de votre blockchain`,
-          color: "#9deff1",
+          color: "#00000",
         },
         {
           parentId: 2,
           id: 8,
-          icone: "linkedin",
+          icone: "code-branch",
           title: "Développement et implémentation de solutions sur-mesure",
           detail: `Notre équipe de developpeurs et de consultants « métiers » met tout en œuvre pour
            assurer la bonne réalisation et l’implémentation de vos projets sur-mesure, de l’expression du besoin, à la réalisation du POC, la mise en production et la livraison de votre solution.`,
@@ -151,24 +151,24 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
         {
           parentId: 2,
           id: 9,
-          icone: "linkedin",
+          icone: "history",
           title: "Audits et diligences techniques et règlementaires",
           detail: `Nous auditons vos projets ou vos solutions blockchain existantes, sur le plan technique, juridique 
           et de gouvernance. Nos analyses sont suivies de recommandations en vue d’amélioration ou d’accompagnement dans le cadre d’un partenariat stratégique.`,
-          color: "#9deff1",
+          color: "#ffc20b",
         },
         {
           parentId: 3,
           id: 10,
-          icone: "linkedin",
+          icone: "wallet",
           title: "Liquidity provider",
           detail: `Nous assurons la liquidité de vos actifs numériques en devises FIAT`,
-          color: "#9deff1",
+          color: "#ff0099",
         },
         {
           parentId: 3,
           id: 11,
-          icone: "linkedin",
+          icone: "coins",
           title: "Initiation : Crypto-actifs",
           detail: `Nous proposons un programme d’initiation aux cryptos actifs au cours duquel vous saurez comment détenir des 
           actifs numériques, comment les échanger et comment analyser un actif numérique`,
@@ -191,7 +191,7 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
           icone: "linkedin",
           detail:
             "Les blockchains et les actifs numérique peuvent sembler difficiles à comprendre. C’est la raison pour laquelle nous...",
-          color: "#fac54b",
+          color: "#ff0099",
           img: "http://blockchain101.fr/wp-content/uploads/2018/02/Blockchain-Funds-300x300.png",
         },
         {

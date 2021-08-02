@@ -168,7 +168,7 @@
           :style="{ border: '1px solid ' + projet.color }"
         >
           <p>
-            <span class="project_number">{{ projet.id }}</span>
+            <span class="project_number" :style="{ backgroundColor: projet.color }">{{ projet.id }}</span>
           </p>
           <p>{{ projet.title }}</p>
         </div>
@@ -192,7 +192,7 @@ export default {
         {
           id: 2,
           title: "Plateforme de crowdfunding",
-          color: "#F1FAEE",
+          color: "#ff0099",
         },
         {
           id: 3,
