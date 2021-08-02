@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container" >
     <div class="row">
-      <h2 class="col-md-12 title">Notre mission_</h2>
+      <h2 class="col-md-12 title" id="notre_mission">Notre mission_</h2>
       <p class="col-md-12 btn-body-text">
         Notre mission est de contribuer activement au développement de
         l’économie numérique en apportant aux entreprises, aux institutions et

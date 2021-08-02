@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div id="home" class="index">
     <loader v-if="loading" />
     <Particles
       id="tsparticles"
@@ -93,10 +93,10 @@
       <section class="notre-mission">
         <notre-mission />
       </section>
-      <section class="qui-some-nous">
+      <section id="qui_sommes_nous" class="qui-some-nous">
         <qui-somme-nous />
       </section>
-      <section>
+      <section >
         <nos-services
           href="#"
           v-scroll-to="'#element'"
@@ -107,12 +107,12 @@
       <section class="sous-services">
         <sous-services id="element" :parentId="parentId" />
       </section>
-      <section class="nos-convictions">
+      <section id="nos_convictions" class="nos-convictions">
         <div class="w-100 s-convictions">
           <nos-convictions />
         </div>
       </section>
-      <section class="">
+      <section id="nos_projets" class="">
         <nos-projets />
       </section>
       <section class="google-map mt-4">
@@ -137,19 +137,7 @@ import contactezNous from "../components/contactez-nous.vue";
 
 // Vue.use(VueScrollTo)
 
-Vue.use(VueScrollTo, {
-  container: "body",
-  duration: 500,
-  easing: "ease",
-  offset: 0,
-  force: true,
-  cancelable: true,
-  onStart: false,
-  onDone: false,
-  onCancel: false,
-  x: false,
-  y: true,
-});
+// Vue.use(VueScrollTo, );
 
 export default {
   components: { contactezNous },
@@ -232,7 +220,7 @@ main {
 }
 .nav-bar {
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 .qui-some-nous {
   position: relative;

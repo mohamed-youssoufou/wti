@@ -1,6 +1,6 @@
 <template>
   <div class="write-us pt-4 pb-4">
-    <h3 class="title">Nous contactez_</h3>
+    <h3 class="title" id="contactez_nous">Nous contactez_</h3>
     <hr class="hr" />
     <form
       class="write-us__form"

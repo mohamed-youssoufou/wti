@@ -44,7 +44,19 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    'vue-scrollto/nuxt',
+    ['vue-scrollto/nuxt', {
+      container: "body",
+      duration: 1000,
+      easing: "ease-in-out",
+      offset: -100,
+      force: true,
+      cancelable: true,
+      onStart: false,
+      onDone: false,
+      onCancel: false,
+      x: false,
+      y: true,
+    }],
     [
       'nuxt-fontawesome', {
         imports: [

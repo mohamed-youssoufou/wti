@@ -15,8 +15,8 @@
 
 .main1 {
     margin: 0px auto;
-    width: 480px;
-    height: 480px;
+    width: 700px;
+    height: 700px;
     position: relative;
 }
 
@@ -126,10 +126,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    width: 50%;
+    height: 40%;
 }
 
 .center-logo img {
-    max-width: 200px;
+    /* max-width: 200px; */
+    width: 100%;
+    height: 100%;
 }
 
 /* keyframe animation */
