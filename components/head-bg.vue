@@ -70,14 +70,43 @@ export default {
 
 <style >
 #animation_ > .Typewriter__wrapper {
-  color: #2a80b9;
+  color: #f8f8f8;
   font-size: 2.1em;
   padding-left: 2%;
-  padding-bottom: 7%;
 }
+
+@media only screen and (max-width: 1444px) {
+  #animation_ > .Typewriter__wrapper {
+    color: #ffffff;
+    font-size: 1.6em;
+    padding-left: 3%;
+  }
+  #animation_ {
+    position: absolute;
+    height: 95%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main1 {
+    width: 280px;
+    height: 280px;
+  }
+  #animation_ > .Typewriter__wrapper {
+    color: #ffffff;
+    font-size: 0.7em;
+    padding-left: -10%;
+  }
+  #animation_ {
+    position: absolute;
+    height: 100%;
+    transform: translate(-13%, -23%)
+  }
+}
+
 #animation_ {
   position: absolute;
-  height: 100%;
+  height: 105%;
   width: 100%;
   display: flex;
   flex-direction: column;

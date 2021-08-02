@@ -85,6 +85,7 @@
         detectRetina: true,
       }"
     />
+    <div class="flou"></div>
     <header class="h-100">
       <navBar @myEvent="pushToSousService" class="nav-bar" />
       <headBg class="head-bg" />
@@ -96,7 +97,7 @@
       <section id="qui_sommes_nous" class="qui-some-nous">
         <qui-somme-nous />
       </section>
-      <section >
+      <section>
         <nos-services
           href="#"
           v-scroll-to="'#element'"
@@ -112,7 +113,7 @@
           <nos-convictions />
         </div>
       </section>
-      <section id="nos_projets" class="">
+      <section id="nos_projets" class="nos-projets">
         <nos-projets />
       </section>
       <section class="google-map mt-4">
@@ -122,11 +123,11 @@
         <contactez-nous />
       </section>
 
-      <section class="">
+      <section class="footer">
         <foot />
       </section>
     </main>
-     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </div>
 </template>
 
@@ -170,15 +171,23 @@ export default {
 </script>
 
 <style >
+.flou {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 header {
-  background:black;
+  background: black;
 }
 .index {
   position: relative;
 }
-html, body {
-    width: 100%;
-    background-color:rgba(0, 0, 0, .0)!important;
+html,
+body {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 main {
   background-color: black;
@@ -193,7 +202,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100% !important;
-  z-index: 4;
+  z-index: 3;
 }
 
 .contactez-nous {
@@ -211,7 +220,7 @@ main {
   z-index: 4;
   width: 100%;
   height: auto;
-  background-color:black;
+  background-color: black;
 }
 .nos-services {
   position: relative;
@@ -233,20 +242,12 @@ main {
   position: relative;
   z-index: 4;
 }
-.nos-convictions {
-  position: relative;
-  position: relative;
-  z-index: 4;
-}
-.google-map {
-  position: relative;
-  z-index: 4;
-}
-.sous-services {
-  position: relative;
-  z-index: 4;
-}
-.nos-services {
+.nos-convictions,
+.google-map,
+.sous-services,
+.nos-services,
+.nos-projets,
+.footer {
   position: relative;
   z-index: 4;
 }
