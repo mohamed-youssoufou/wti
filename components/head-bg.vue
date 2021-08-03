@@ -56,7 +56,7 @@ export default {
     });
 
     typewriter
-      .typeString("wealthtech innovations")
+      .typeString("WEALTHTECH INNOVATIONS")
       .pauseFor(2500)
       .deleteChars(22)
       .pauseFor(2500)
@@ -71,14 +71,14 @@ export default {
 <style >
 #animation_ > .Typewriter__wrapper {
   color: #f8f8f8;
-  font-size: 2.1em;
+  font-size: 1.6em;
   padding-left: 2%;
 }
 
 @media only screen and (max-width: 1444px) {
   #animation_ > .Typewriter__wrapper {
     color: #ffffff;
-    font-size: 1.6em;
+    font-size: 1.2em;
     padding-left: 3%;
   }
   #animation_ {
@@ -87,6 +87,22 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  #animation_ > .Typewriter__wrapper {
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-left: -10%;
+  }
+}
+@media only screen and (max-width: 812px) {
+  #animation_ > .Typewriter__wrapper {
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-left: -10%;
+  }
+}
+
+
 @media only screen and (max-width: 600px) {
   .main1 {
     width: 280px;
@@ -94,7 +110,7 @@ export default {
   }
   #animation_ > .Typewriter__wrapper {
     color: #ffffff;
-    font-size: 0.7em;
+    font-size: 0.5em;
     padding-left: -10%;
   }
   #animation_ {

@@ -64,7 +64,7 @@ export default {};
 
 <style scoped>
 .footer {
-  background: #000;
+  background: rgba(0, 0, 0, 0.1);
   color: #fff;
   font-weight: 500;
 }
