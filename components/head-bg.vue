@@ -68,7 +68,7 @@ export default {
 };
 </script>
 
-<style >
+<style>
 #animation_ > .Typewriter__wrapper {
   color: #f8f8f8;
   font-size: 1.6em;
