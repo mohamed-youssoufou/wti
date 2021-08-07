@@ -82,7 +82,7 @@ export default {
   min-height: 60px;
   line-height: 32px;
   color: #3333;
-  font-weight: 800;
+  font-weight: 801;
 }
 .body {
   font-family: fsl;
