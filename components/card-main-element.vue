@@ -81,7 +81,7 @@ export default {
   font-size: 28px;
   min-height: 60px;
   line-height: 32px;
-  color: #333;
+  color: #3333;
   font-weight: 800;
 }
 .body {
