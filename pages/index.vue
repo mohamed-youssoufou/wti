@@ -197,7 +197,7 @@ main {
   background-color: rgba(0, 0, 0, 0);
   position: relative;
   z-index: 4;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #tsparticles {
@@ -212,7 +212,7 @@ main {
   background-size: 100% auto;
   position: relative;
   z-index: 4;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .index {
@@ -236,7 +236,7 @@ main {
 .qui-some-nous {
   position: relative;
   z-index: 4;
-  height: 100vh;
+  min-height: 100vh;
 }
 .s-convictions {
   /* background-color: #ffe100; */
@@ -244,7 +244,10 @@ main {
   top: 25px;
   position: relative;
   z-index: 4;
-  height: 100vh;
+  min-height: 100vh;
+}
+.nos-projets{
+  margin-bottom: 10px;
 }
 .nos-convictions,
 .google-map,
@@ -252,7 +255,8 @@ main {
 .notre-mission{
   position: relative;
   z-index: 4;
-  height: 100vh;
+  min-height: 100vh;
+  
   /* display: flex;
   flex-direction: column;
   justify-content: center; */

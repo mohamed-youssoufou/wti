@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row ">
+    <div class="row">
       <!-- <h2 class="col-md-12"></h2> -->
       <!-- <h6 class="col-md-12">
         <div
@@ -162,13 +162,13 @@
       </div>
       <div class="col-md-12 d-flex flex-wrap">
         <div
-          class="w-25 p-4 h-31 text-center project"
+          class="p-4 h-31 text-center project"
           v-for="projet in projects"
           :key="projet.id"
           :style="{ border: '1px solid white' }"
         >
           <p>
-            <span class="project_number text-white" >{{ projet.id }}</span>
+            <span class="project_number text-white">{{ projet.id }}</span>
           </p>
           <p class="text-white">{{ projet.title }}</p>
         </div>
@@ -223,7 +223,7 @@ export default {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #171f30;
-  color: white ;
+  color: white;
 }
 .h-30 {
   height: 30%;
@@ -312,13 +312,19 @@ p.btn-body-text {
   text-align: left;
   padding-top: 20px;
 }
-@media screen and (min-width: 375px) {
+.project {
+  width: 25%;
+}
+@media screen and (max-width: 375px) {
   .title {
     font-size: 40px;
     text-align: justify;
   }
   .p.btn-body-text {
     justify-content: center;
+  }
+  .project {
+    width: 100%;
   }
 }
 </style>
