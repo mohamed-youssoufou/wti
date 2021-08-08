@@ -1,7 +1,7 @@
 <template>
-  <div class="container mt-4">
+  <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title">Nos services_</h2>
+      <h2 class="col-md-12 title">Nos services</h2>
       <p class="col-md-12 btn-body-text">
         Wealthtech Innovations accompagne les particuliers, les associations,
         les organisations, les institutions dans la découverte, l’exploration et
@@ -80,16 +80,17 @@ export default {
   font-size: 70px;
   line-height: 1.2em;
   font-weight: 700;
+  text-align: center;
 }
 p.btn-body-text {
+  text-align: center;
   margin-bottom: 0.875em;
   font-family: fsl, sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1.5em;
   color: #ffffff;
   margin-top: 0;
   width: 100%;
-  max-width: 56rem;
 }
 .cover-trios a.trio-cover {
   display: block;

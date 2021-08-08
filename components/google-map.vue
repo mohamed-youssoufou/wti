@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-100">
     <GMap
       ref="gMap"
       language="en"
@@ -65,4 +65,8 @@ export default {
 </script>
 
 <style>
+.GMap__Wrapper {
+  width: 100%;
+  height: 100vh !important;
+}
 </style>

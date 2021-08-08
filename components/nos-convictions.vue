@@ -1,7 +1,7 @@
 <template>
-  <div class="container mt-4">
+  <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title">Nos convictions_</h2>
+      <h2 class="col-md-12 title text-center">Nos convictions</h2>
       <div class="col-md-12">
         <p class="btn-body-text">
           À l'aune de la révolution numérique impulsée par le développement et l’implémentation des nouvelles technologies, nous sommes convaincus que les actifs numériques, le WEB3 et Les blockchains apportent des solutions durables qui répondent à plusieurs grands enjeux actuels.
@@ -26,22 +26,17 @@ export default {};
   font-size: 70px;
   line-height: 1.2em;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
 }
 p.btn-body-text {
+  text-align: center;
   margin-bottom: 0.875em;
   font-family: fsl, sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1.5em;
   color: #ffffff;
   margin-top: 0;
   width: 100%;
-  max-width: 56rem;
-  display: flex;
-  flex-direction:column;
-  align-items:flex-end;
-  text-align: right;
-  float: right;
 }
 @media screen and (min-width: 375px){
   .title {

@@ -1,10 +1,10 @@
 <template>
   <div class="p-2">
-    <div class="card" :style="'border: 3px solid' + color">
+    <div class="card" >
       <div class="card-body">
-        <h5 class="d-flex flex-row align-items-center card-title">
+        <h5 class="d-flex flex-row  card-title">
           <div class="pr-2">
-            <font-awesome-icon class="icone" :style="{color}" :icon="['fa', icone]" />
+            <font-awesome-icon class="icone" :icon="['fa', icone]" />
           </div>
           <div>
             {{ title }}
@@ -51,10 +51,7 @@ export default {
   font-size: 50px;
 }
 .card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  min-height: 309px;
+  min-height: 350px;
 }
 .card-text {
   color: #707070;

@@ -81,13 +81,15 @@ export default {
   font-size: 28px;
   min-height: 60px;
   line-height: 32px;
-  color: #3333;
+  color: rgba(0, 0, 0);
   font-weight: 801;
+  text-align: center;
 }
 .body {
   font-family: fsl;
   font-size: 18px;
   line-height: 27px;
   color: #707070;
+  text-align: justify;
 }
 </style>

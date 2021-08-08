@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-4 pb-4" :key="parentId">
+  <div class="container " :key="parentId">
     <div class="row pl-2">
       <h2 class="col-md-12 title text-center">
         {{ servicesFilter(parentId)[0].title }}

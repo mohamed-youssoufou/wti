@@ -86,15 +86,15 @@
       }"
     />
     <div class="flou"></div>
-    <header class="h-100">
+    <header>
       <navBar @myEvent="pushToSousService" class="nav-bar" />
       <headBg class="head-bg" />
     </header>
     <main role="main">
-      <section class="notre-mission">
-        <notre-mission />
+      <section id="notre_mission" class="notre-mission d-flex flex-column justify-content-center">
+        <notre-mission  />
       </section>
-      <section id="qui_sommes_nous" class="qui-some-nous">
+      <section id="qui_sommes_nous" class="qui-some-nous d-flex flex-column justify-content-center">
         <qui-somme-nous />
       </section>
       <section>
@@ -105,21 +105,21 @@
           class="nos-services"
         />
       </section>
-      <section class="sous-services">
+      <section class="sous-services mt-4">
         <sous-services id="element" :parentId="parentId" />
       </section>
-      <section id="nos_convictions" class="nos-convictions">
-        <div class="w-100 s-convictions">
+      <section id="nos_convictions" class="nos-convictions ">
+        <div class="w-100 s-convictions d-flex flex-column justify-content-center">
           <nos-convictions />
         </div>
       </section>
-      <section id="nos_projets" class="nos-projets">
+      <section id="nos_projets" class="nos-projets d-flex flex-column justify-content-center">
         <nos-projets />
       </section>
-      <section class="google-map mt-4">
-        <google-map />
+      <section class="google-map d-flex flex-column justify-content-center">
+        <google-map class="h-100" />
       </section>
-      <section class="contactez-nous">
+      <section class="contactez-nous d-flex flex-column justify-content-center">
         <contactez-nous />
       </section>
 
@@ -180,6 +180,7 @@ export default {
 }
 header {
   background: black;
+  height: 100vh;
 }
 .index {
   position: relative;
@@ -196,6 +197,7 @@ main {
   background-color: rgba(0, 0, 0, 0);
   position: relative;
   z-index: 4;
+  height: 100vh;
 }
 
 #tsparticles {
@@ -210,6 +212,7 @@ main {
   background-size: 100% auto;
   position: relative;
   z-index: 4;
+  height: 100vh;
 }
 
 .index {
@@ -219,13 +222,12 @@ main {
   position: relative;
   z-index: 4;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: black;
 }
 .nos-services {
   position: relative;
   z-index: 1;
-  /* width: 100%; */
 }
 .nav-bar {
   position: relative;
@@ -234,6 +236,7 @@ main {
 .qui-some-nous {
   position: relative;
   z-index: 4;
+  height: 100vh;
 }
 .s-convictions {
   /* background-color: #ffe100; */
@@ -241,14 +244,25 @@ main {
   top: 25px;
   position: relative;
   z-index: 4;
+  height: 100vh;
 }
 .nos-convictions,
 .google-map,
-.sous-services,
-.nos-services,
 .nos-projets,
-.footer {
+.notre-mission{
   position: relative;
+  z-index: 4;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+.sous-services, .nos-services{
+  position: relative;
+  z-index: 4;
+}
+.footer {
+   position: relative;
   z-index: 4;
 }
 </style>

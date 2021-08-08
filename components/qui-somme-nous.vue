@@ -1,7 +1,7 @@
 <template>
-  <div class="container mt-4">
+  <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title">Qui sommes nous_ ?</h2>
+      <h2 class="col-md-12 title">Qui sommes nous?</h2>
       <div class="col-md-12">
         <p class="btn-body-text">
           Wealthtequich innovation est une start-up spécialisée dans le
@@ -31,33 +31,26 @@ export default {};
   color: white;
 }
 .title {
-  text-align: end !important;
   max-width: none;
   margin-bottom: 2rem;
   margin-left: 0;
   opacity: 1;
   font-family: Spacegrotesk, sans-serif;
-  color: white;
+  color: #ffffff;
   font-size: 70px;
   line-height: 1.2em;
   font-weight: 700;
+  text-align: center;
 }
-h2 {
-  text-align: right;
-}
-
 p.btn-body-text {
+  text-align: center;
   margin-bottom: 0.875em;
   font-family: fsl, sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1.5em;
-  color: currentColor;
+  color: #ffffff;
   margin-top: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  float: right;
 }
 @media screen and (min-width: 375px){
   .title {

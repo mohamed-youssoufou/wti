@@ -2,7 +2,7 @@
 <template>
   <div id="app">
     <div class="banner align-item-center">
-      <div class="main1 mt-4 d-flex align-items-center">
+      <div class="main1 d-flex align-items-center">
         <div class="big-circle">
           <div class="icon-block">
             <img src="~/assets/img/1.png" alt="web design icon" />
@@ -143,8 +143,8 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 1000px;
   width: 100%;
+  height: 100%;
 }
 
 /* @media (max-width: 1440px) {

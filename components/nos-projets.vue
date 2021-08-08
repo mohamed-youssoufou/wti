@@ -1,6 +1,6 @@
 <template>
-  <div class="container mt-4">
-    <div class="row pt-4">
+  <div class="container">
+    <div class="row ">
       <!-- <h2 class="col-md-12"></h2> -->
       <!-- <h6 class="col-md-12">
         <div
@@ -149,9 +149,9 @@
       </h6> -->
 
       <!-- <div class="row"> -->
-      <div class="col-md-7">
+      <div class="col-md-12">
         <div class="row">
-          <div class="col-md-12 title">Nos projets_</div>
+          <div class="col-md-12 title text-center">Nos projets</div>
           <p class="btn-body-text">
             À l'aune de la révolution numérique impulsée par le développement et
             l’implémentation des nouvelles technologies, nous sommes convaincus
@@ -160,17 +160,17 @@
           </p>
         </div>
       </div>
-      <div class="col-md-5 d-flex flex-wrap">
+      <div class="col-md-12 d-flex flex-wrap">
         <div
-          class="w-50 p-4 h-31 text-center project"
+          class="w-25 p-4 h-31 text-center project"
           v-for="projet in projects"
           :key="projet.id"
-          :style="{ border: '1px solid ' + projet.color }"
+          :style="{ border: '1px solid white' }"
         >
           <p>
-            <span class="project_number" :style="{ backgroundColor: projet.color }">{{ projet.id }}</span>
+            <span class="project_number text-white" >{{ projet.id }}</span>
           </p>
-          <p>{{ projet.title }}</p>
+          <p class="text-white">{{ projet.title }}</p>
         </div>
       </div>
       <!-- </div> -->
@@ -223,34 +223,32 @@ export default {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #171f30;
-  color: white;
+  color: white ;
 }
 .h-30 {
   height: 30%;
 }
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: fsl;
-  font-size: 18px;
-  font-weight: bolder;
+.title {
+  max-width: none;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  opacity: 1;
+  font-family: Spacegrotesk, sans-serif;
   color: #ffffff;
+  font-size: 70px;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-align: center;
 }
 p.btn-body-text {
+  text-align: center;
   margin-bottom: 0.875em;
   font-family: fsl, sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1.5em;
   color: #ffffff;
   margin-top: 0;
   width: 100%;
-  max-width: 56rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  float: left;
 }
 @keyframes animation_53_1 {
   0% {
