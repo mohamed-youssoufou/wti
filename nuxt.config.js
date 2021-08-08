@@ -48,7 +48,6 @@ export default {
       container: "body",
       duration: 1000,
       easing: "ease-in-out",
-      offset: -100,
       force: true,
       cancelable: true,
       onStart: false,
