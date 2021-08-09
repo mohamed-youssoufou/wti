@@ -28,7 +28,7 @@
           </b-nav-form> -->
           <b-nav-item href="#" v-scroll-to="'#notre_mission'">Notre mission</b-nav-item>
           <b-nav-item href="#" v-scroll-to="'#qui_sommes_nous'">Qui sommes nous</b-nav-item>
-          <b-nav-item href="#" v-scroll-to="'#nos_convictions'">Nos convictions</b-nav-item>
+          <!-- <b-nav-item href="#" v-scroll-to="'#nos_convictions'">Nos convictions</b-nav-item>
           <b-nav-item-dropdown text="Nos services" right>
             <b-dropdown-item
               @click="changeService(1)"
@@ -49,7 +49,7 @@
               >Crypto-actifs</b-dropdown-item
             >
           </b-nav-item-dropdown>
-          <b-nav-item href="#" v-scroll-to="'#nos_projets'">Nos projets</b-nav-item>
+          <b-nav-item href="#" v-scroll-to="'#nos_projets'">Nos projets</b-nav-item> -->
           <b-nav-item href="#" v-scroll-to="'#contactez_nous'">contactez-nous</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
