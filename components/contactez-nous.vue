@@ -1,37 +1,49 @@
 <template>
   <div class="write-us pt-4 pb-4">
-    <h3 class="title" >Nous contactez</h3>
+    <h3 class="title">Nous contacter</h3>
     <!-- <hr class="hr" /> -->
+    <p v-if="errors.length">
+    <b style="color:white"></b>
+    <ul style="color:red; list-style:none;">
+      <li  v-for="error in errors" :key="error">{{ error }}</li>
+    </ul>
+  </p>
+    <div class="d-flex objects flex-wrap">
+      <div class="w-50" v-for="object in objects" :key="object.id">
+        <div class="form-check form-check-inline">
+          <input
+            required
+            type="checkbox"
+            class="form-check-input"
+            :value="object.value"
+            v-model="checkedName"
+            :id="'check' + object.key"
+          />
+          <label
+            class="form-check-label"
+            :for="'check' + object.key"
+            style="color: white"
+            >{{ object.value }}</label
+          >
+        </div>
+      </div>
+    </div>
     <form
       class="write-us__form"
       id="new_contact_us_form"
-      action="/contact"
       accept-charset="UTF-8"
       method="post"
+      action="#"
+      @submit="send"
     >
-      <input name="utf8" type="hidden" value="✓" /><input
-        type="hidden"
-        name="authenticity_token"
-        value="qZiXcmmHpbifjaK1JmVV+WzjfGMimF2AD3eR3HQV8jNYnvZVJD0aPg06BaBEyQRcOpXHIiHkL8ETbPl962IQEw=="
-      />
       <div class="input-columns">
-        <div class="input-group">
-          <input
-            required="required"
-            class="placehold"
-            id="name"
-            type="text"
-            name="contact_us_form[name]"
-          />
-          <label for="contact_us_form_name">Nom</label>
-        </div>
         <div class="input-group">
           <input
             required="required"
             id="mail"
             class="placehold"
-            type="text"
-            name="contact_us_form[email]"
+            type="email"
+            v-model="email"
           />
           <label for="contact_us_form_email">E-Mail</label>
         </div>
@@ -43,11 +55,11 @@
           class="placehold"
           data-gramm="false"
           spellcheck="false"
-          name="contact_us_form[message]"
+          v-model="content"
         ></textarea>
         <label for="contact_us_form_message">Contenu du message</label>
       </div>
-      <div class="input-checkbox">
+      <!-- <div class="input-checkbox">
         <input
           name="contact_us_form[tos_accepted]"
           type="hidden"
@@ -65,62 +77,7 @@
           mes coordonnées et mes questions soient conservées de manière
           permanente..</label
         >
-      </div>
-      <!-- <script src="https://www.recaptcha.net/recaptcha/api.js?render=6LfzsswUAAAAAFxhwUJK8yhjMlxp_wjnpDXKorBl"></script> -->
-      <!-- <script>
-        // Define function so that we can call it again later if we need to reset it
-        // This executes reCAPTCHA and then calls our callback.
-        function executeRecaptchaForContact() {
-          grecaptcha.ready(function () {
-            grecaptcha
-              .execute("6LfzsswUAAAAAFxhwUJK8yhjMlxp_wjnpDXKorBl", {
-                action: "contact",
-              })
-              .then(function (token) {
-                setInputWithRecaptchaResponseTokenForContact(
-                  "g-recaptcha-response-data-contact",
-                  token
-                );
-              });
-          });
-        }
-        // Invoke immediately
-        executeRecaptchaForContact();
-
-        // Async variant so you can await this function from another async function (no need for
-        // an explicit callback function then!)
-        // Returns a Promise that resolves with the response token.
-        async function executeRecaptchaForContactAsync() {
-          return new Promise((resolve, reject) => {
-            grecaptcha.ready(async function () {
-              resolve(
-                await grecaptcha.execute(
-                  "6LfzsswUAAAAAFxhwUJK8yhjMlxp_wjnpDXKorBl",
-                  { action: "contact" }
-                )
-              );
-            });
-          });
-        }
-
-        var setInputWithRecaptchaResponseTokenForContact = function (
-          id,
-          token
-        ) {
-          var element = document.getElementById(id);
-          element.value = token;
-        };
-      </script> -->
-      <!-- <input
-        type="hidden"
-        name="g-recaptcha-response-data[contact]"
-        id="g-recaptcha-response-data-contact"
-        data-sitekey="6LfzsswUAAAAAFxhwUJK8yhjMlxp_wjnpDXKorBl"
-        class="g-recaptcha g-recaptcha-response"
-        style=""
-        value="03AGdBq27DqdZrEyS1AAIYLoeDO5REjTYSFFOO6Qh6O1WA7ultjA289au5tKszAH7IcEU5lFUDzAKzdqsDcelMhNcifRXC8it9a0efF6ddaR1JPGGd3N-LvIytVg-mtDUY0f-ucotiD9TkWSARALto1CM49hztcaC9JUKqjLpJLIBL7YTxJGxyc1nE0h8z1Cui2_XeS17RJJl48LtCiO7CUEmLE1R_vGwkLdkqnzYMDBC8ECtx08kJgx0juwcnPN_5WA_nww-T-9bQw8iGd5WRZBtknnh5fDTybYtUvAZx5j93yeCzsbnp1WAkDkTrcLFxER3aFgGF5nfPcK8Y1FFI6nSkit6M5CEyOI9BjrcdnTJRINH7ERD0pGHHvEfmX16qPOG0BqRoriql9lGWzsVLcTjDCU5oikb2myWSEWm45xAUe7GivNQXqOgM2Ghg0QUkZ7YRR9tfK-8c"
-      /> -->
-
+      </div> -->
       <button name="button" type="submit" class="submit">
         Envoyer le message
       </button>
@@ -129,13 +86,70 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      objects: [
+        { id: 1, value: "Déploiement de projet blockchain" },
+
+        { id: 2, value: "Information" },
+
+        { id: 3, value: "Formation" },
+
+        { id: 4, value: "Intervention" },
+
+        { id: 5, value: "Partenariat" },
+
+        { id: 6, value: "Découvrir les projets Wealthtech" },
+
+        { id: 7, value: "Cryptos actifs" },
+
+        { id: 8, value: "Autres" },
+      ],
+      checkedName: [],
+      errors: [],
+      email: "",
+      content: "",
+    };
+  },
+  methods: {
+    send(e) {
+      this.errors = [];
+
+      if (!this.checkedName.length) {
+        this.errors.push("Cocher les/l'objet de la requête!");
+      }
+      if (!this.email) {
+        this.errors.push("Email requis.");
+      } else if (!this.validEmail(this.email)) {
+        this.errors.push("Un email valide est requis.");
+      }
+
+      if (!this.errors.length) {
+        this.$axios.$post('/mail/send', {
+          from: this.email,
+          subject: 'DEPUIS LE SITE WEB: '+this.checkedName.join(", "),
+          text: this.content,
+        });
+
+      }
+
+      e.preventDefault();
+    },
+    validEmail: function (email) {
+      var re =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    },
+  },
+};
 </script>
 
 <style scoped>
 .write-us {
   text-align: center;
 }
+
 .title {
   max-width: none;
   margin-bottom: 2rem;
@@ -162,7 +176,7 @@ textarea {
   margin: 0;
 }
 .write-us__form .input-columns {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
 }
@@ -272,7 +286,13 @@ textarea {
   max-width: 44.5em;
   padding: 0 1em;
 }
-@media screen and (min-width: 375px){
+.objects {
+  text-align: left;
+  margin: 0 auto 1em;
+  max-width: 44.5em;
+  padding: 0 1em;
+}
+@media screen and (min-width: 375px) {
   .title {
     font-size: 40px;
   }

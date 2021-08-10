@@ -74,7 +74,20 @@ export default {
       key: 'AIzaSyCMo6DieI9jDuutybzKEPrzmQ4_Nr2hTng',
       //you can use libraries: ['places']
     }],
-    // 'vue-typer'
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: {
+        to: 'contact@wealthtechinnovations.com',
+      },
+      smtp: {
+        host: "smtp.ionos.fr",
+        port: 587,
+        auth: {
+          user: 'contact@wealthtechinnovations.com',
+          pass: 'Azer102385)'
+        },
+      },
+    }],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
