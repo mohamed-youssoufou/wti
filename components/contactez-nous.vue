@@ -9,7 +9,8 @@
     </ul>
   </p>
     <div class="d-flex objects flex-wrap">
-      <div class="w-50" v-for="object in objects" :key="object.id">
+      
+      <div class="w-50 objects-content" v-for="object in objects" :key="object.id">
         <div class="form-check form-check-inline">
           <input
             required
@@ -28,13 +29,14 @@
         </div>
       </div>
     </div>
+    <loader-send-mail v-if="loader" />
     <form
       class="write-us__form"
       id="new_contact_us_form"
       accept-charset="UTF-8"
       method="post"
       action="#"
-      @submit="send"
+      @submit.prevent="send"
     >
       <div class="input-columns">
         <div class="input-group">
@@ -57,7 +59,7 @@
           spellcheck="false"
           v-model="content"
         ></textarea>
-        <label for="contact_us_form_message">Contenu du message</label>
+        <label for="contact_us_form_message"></label>
       </div>
       <!-- <div class="input-checkbox">
         <input
@@ -86,9 +88,14 @@
 </template>
 
 <script>
+import LoaderSendMail from "./loader-send-mail.vue";
 export default {
+  components: {
+    LoaderSendMail,
+  },
   data() {
     return {
+      loader: false,
       objects: [
         { id: 1, value: "Déploiement de projet blockchain" },
 
@@ -113,8 +120,9 @@ export default {
     };
   },
   methods: {
-    send(e) {
+    async send(e) {
       this.errors = [];
+      this.loader = true;
 
       if (!this.checkedName.length) {
         this.errors.push("Cocher les/l'objet de la requête!");
@@ -126,14 +134,20 @@ export default {
       }
 
       if (!this.errors.length) {
-        this.$axios.$post('/mail/send', {
-          from: this.email,
-          subject: 'DEPUIS LE SITE WEB: '+this.checkedName.join(", "),
-          text: this.content,
-        });
-
+        try {
+          const response = await this.$axios.$post("/mail/send", {
+            from: this.email,
+            subject: "DEPUIS LE SITE WEB: " + this.checkedName.join(", "),
+            text: this.content,
+          });
+          this.email = "";
+          this.checkedName = [];
+          this.content = "";
+        } catch (error) {
+          console.log(error);
+        }
       }
-
+      this.loader = false;
       e.preventDefault();
     },
     validEmail: function (email) {
@@ -298,6 +312,12 @@ textarea {
   }
   .p.btn-body-text {
     text-align: center;
+  }
+  
+}
+@media screen and (max-width: 375px) {
+  .objects-content {
+    width: 100% !important ;
   }
 }
 </style>
