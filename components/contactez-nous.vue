@@ -135,7 +135,7 @@ export default {
 
       if (!this.errors.length) {
         try {
-          const response = await this.$axios.$post("/mail/send", {
+          const response = await this.$mail.send({
             from: this.email,
             subject: "DEPUIS LE SITE WEB: " + this.checkedName.join(", "),
             text: this.content,
