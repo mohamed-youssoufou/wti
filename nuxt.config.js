@@ -40,6 +40,10 @@ export default {
 
   ],
 
+  axios: {
+    baseURL: "https://www.wealthtechinnovations.com",
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
