@@ -13,7 +13,7 @@
         </li> -->
         
         <li class="footer__sm-links">
-          <a href="https://www.facebook.com/ma.tea.drink/">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100071166496735">
             <svg class="icon-facebook" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
               <title>Facebook</title>
               <path
@@ -33,7 +33,7 @@
               ></path>
             </svg>
           </a> -->
-          <a href="https://twitter.com/ma_tea_drink">
+          <a target="_blank" href="#">
             <svg class="twitter" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
               <title>Twitter</title>
               <path
