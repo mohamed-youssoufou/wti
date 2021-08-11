@@ -41,19 +41,7 @@ export default {
   ],
 
   axios: {
-    // baseURL: "https://www.wealthtechinnovations.com",
-  },
-
-  publicRuntimeConfig: {
-    axios: {
-      browserBaseURL: "https://www.wealthtechinnovations.com",
-    }
-  },
-
-  privateRuntimeConfig: {
-    axios: {
-      baseURL: process.env.BASE_URL
-    }
+    baseURL: process.env.BASE_URL,
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
