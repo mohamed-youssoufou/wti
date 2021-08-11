@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  target: 'static',
 
   // loading: '~/components/loader.vue',
 
@@ -41,7 +41,19 @@ export default {
   ],
 
   axios: {
-    baseURL: "https://www.wealthtechinnovations.com",
+    // baseURL: "https://www.wealthtechinnovations.com",
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: "https://www.wealthtechinnovations.com",
+    }
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL
+    }
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -85,7 +97,7 @@ export default {
       },
       smtp: {
         host: "smtp.ionos.fr",
-        port: 587,
+        port: 465,
         auth: {
           user: 'contact@wealthtechinnovations.com',
           pass: 'Azer102385)'
