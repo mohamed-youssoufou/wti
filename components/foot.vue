@@ -33,7 +33,7 @@
               ></path>
             </svg>
           </a> -->
-          <a target="_blank" href="#">
+          <a target="_blank" href="https://twitter.com/Wealthtechinno?s=08">
             <svg class="twitter" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
               <title>Twitter</title>
               <path
