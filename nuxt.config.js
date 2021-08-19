@@ -6,10 +6,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'wti',
+    title: 'Wealthtech Innovations',
     htmlAttrs: {
       lang: 'en'
     },
+    // Global site tag (gtag.js) - Google Analytics
+    // script: {
+    //   src: 'https://www.googletagmanager.com/gtag/js?id=G-7LPSCGVLHZ',
+    //   async: true,
+    // },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,7 +22,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/logo_wealth.png' }
     ]
   },
 

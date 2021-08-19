@@ -12,7 +12,7 @@
         (Crypto-actifs).<br/> Suite au constat d’absence d’informations et de
         formations sur le sujet de la blockchain en Afrique, nous avons décidé de
         mettre en place une structure pour promouvoir cette nouvelle technologie
-        et les avantages liés à son implémentation. <br/>Nous avons notamment mis
+        et les avantages liés à son implémentation.<br/>Nous avons notamment mis
         en place des partenariats avec des universités et des
         associations dans l'optique d'informer, de former et de concevoir des
         projets en ce sens.

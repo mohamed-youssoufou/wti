@@ -91,10 +91,16 @@
       <headBg class="head-bg" />
     </header>
     <main role="main">
-      <section id="notre_mission" class="notre-mission d-flex flex-column justify-content-center">
-        <notre-mission  />
+      <section
+        id="notre_mission"
+        class="notre-mission d-flex flex-column justify-content-center"
+      >
+        <notre-mission />
       </section>
-      <section id="qui_sommes_nous" class="qui-some-nous d-flex flex-column justify-content-center">
+      <section
+        id="qui_sommes_nous"
+        class="qui-some-nous d-flex flex-column justify-content-center"
+      >
         <qui-somme-nous />
       </section>
       <!-- <section>
@@ -119,7 +125,10 @@
       <!-- <section class="google-map d-flex flex-column justify-content-center">
         <google-map class="h-100" />
       </section> -->
-      <section id="contactez_nous" class="contactez-nous d-flex flex-column justify-content-center">
+      <section
+        id="contactez_nous"
+        class="contactez-nous d-flex flex-column justify-content-center"
+      >
         <contactez-nous />
       </section>
 
@@ -142,6 +151,12 @@ import contactezNous from "../components/contactez-nous.vue";
 
 export default {
   components: { contactezNous },
+  // created(){
+  //   if (process.browser) {
+  //     // let googleTag = document.createElement('script')
+
+  //   }
+  // },
   mounted() {
     setTimeout(() => this.finish(), 2000);
   },
@@ -157,6 +172,16 @@ export default {
     },
   },
   methods: {
+    // gtag() {
+    //   dataLayer.push(arguments);
+    // },
+    // loadScript() {
+    //   window.dataLayer = window.dataLayer || [];
+
+    //   this.gtag("js", new Date());
+
+    //   this.gtag("config", "G-7LPSCGVLHZ");
+    // },
     start() {
       this.loading = true;
     },
@@ -246,27 +271,28 @@ main {
   z-index: 4;
   min-height: 100vh;
 }
-.nos-projets{
+.nos-projets {
   margin-bottom: 10px;
 }
 .nos-convictions,
 .google-map,
 .nos-projets,
-.notre-mission{
+.notre-mission {
   position: relative;
   z-index: 4;
   min-height: 100vh;
-  
+
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
 }
-.sous-services, .nos-services{
+.sous-services,
+.nos-services {
   position: relative;
   z-index: 4;
 }
 .footer {
-   position: relative;
+  position: relative;
   z-index: 4;
 }
 </style>
