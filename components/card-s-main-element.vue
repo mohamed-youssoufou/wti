@@ -46,15 +46,18 @@ export default {
   font-family: fsl;
   font-weight: 600;
   font-size: 26px;
+  color: #ffffff;
 }
 .icone {
   font-size: 50px;
 }
 .card {
   min-height: 350px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid #515cf5;
 }
 .card-text {
-  color: #707070;
+  color: #ffffff;
   font-family: fsl;
   font-size: 18px;
 }

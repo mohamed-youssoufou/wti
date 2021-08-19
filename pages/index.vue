@@ -103,28 +103,28 @@
       >
         <qui-somme-nous />
       </section>
-      <!-- <section>
+      <section>
         <nos-services
           href="#"
           v-scroll-to="'#element'"
           @myEvent="pushToSousService"
           class="nos-services"
         />
-      </section> -->
-      <!-- <section class="sous-services mt-4">
-        <sous-services id="element" :parentId="parentId" />
-      </section> -->
-      <!-- <section id="nos_convictions" class="nos-convictions ">
+      </section>
+      <section id="element" class="sous-services mt-4">
+        <sous-services  :parentId="parentId" />
+      </section>
+      <section id="nos_convictions" class="nos-convictions ">
         <div class="w-100 s-convictions d-flex flex-column justify-content-center">
           <nos-convictions />
         </div>
-      </section> -->
-      <!-- <section id="nos_projets" class="nos-projets d-flex flex-column justify-content-center">
+      </section>
+      <section id="nos_projets" class="nos-projets d-flex flex-column justify-content-center">
         <nos-projets />
-      </section> -->
-      <!-- <section class="google-map d-flex flex-column justify-content-center">
+      </section>
+      <section class="google-map d-flex flex-column justify-content-center">
         <google-map class="h-100" />
-      </section> -->
+      </section>
       <section
         id="contactez_nous"
         class="contactez-nous d-flex flex-column justify-content-center"

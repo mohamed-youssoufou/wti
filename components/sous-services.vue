@@ -1,5 +1,5 @@
 <template>
-  <div class="container " :key="parentId">
+  <div class="container" :key="parentId">
     <div class="row pl-2">
       <h2 class="col-md-12 title text-center">
         {{ servicesFilter(parentId)[0].title }}
@@ -172,6 +172,16 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
           title: "Initiation : Crypto-actifs",
           detail: `Nous proposons un programme d’initiation aux cryptos actifs au cours duquel vous saurez comment détenir des 
           actifs numériques, comment les échanger et comment analyser un actif numérique`,
+          color: "#9deff1",
+        },
+        {
+          parentId: 3,
+          id: 12,
+          icone: "coins",
+          title: "Création de jetons (actifs)",
+          detail: `Nous vous accompagnons dans votre projet de création de jeton fongible ( cryptomonnaie) , et de jeton non fongible (NFT).
+De l'idée, à la conception des jetons, la constitution des galléries, le choix de plateformes, le développement, la communication. 
+De plus nous prenons en charge le lancement des processus ICO, IEO, FTO, INO`,
           color: "#9deff1",
         },
       ],
