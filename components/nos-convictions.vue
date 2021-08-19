@@ -29,7 +29,7 @@ export default {};
   text-align: center;
 }
 p.btn-body-text {
-  text-align: center;
+  text-align: justify;
   margin-bottom: 0.875em;
   font-family: fsl, sans-serif;
   font-size: 20px;
