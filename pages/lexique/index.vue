@@ -87,55 +87,8 @@
     />
     <div class="flou"></div>
     <header>
-      <navBar @myEvent="pushToSousService" class="nav-bar" />
-      <headBg class="head-bg" />
+      <navBar class="nav-bar" />
     </header>
-    <main role="main">
-      <section
-        id="notre_mission"
-        class="notre-mission d-flex flex-column justify-content-center"
-      >
-        <notre-mission />
-      </section>
-      <section
-        id="qui_sommes_nous"
-        class="qui-some-nous d-flex flex-column justify-content-center"
-      >
-        <qui-somme-nous />
-      </section>
-      <!-- <section>
-        <nos-services
-          href="#"
-          v-scroll-to="'#element'"
-          @myEvent="pushToSousService"
-          class="nos-services"
-        />
-      </section>
-      <section id="element" class="sous-services mt-4">
-        <sous-services  :parentId="parentId" />
-      </section> -->
-      <section id="nos_convictions" class="nos-convictions ">
-        <div class="w-100 s-convictions d-flex flex-column justify-content-center">
-          <nos-convictions />
-        </div>
-      </section>
-      <!-- <section id="nos_projets" class="nos-projets d-flex flex-column justify-content-center">
-        <nos-projets />
-      </section> -->
-      <!-- <section class="google-map d-flex flex-column justify-content-center">
-        <google-map class="h-100" />
-      </section> -->
-      <section
-        id="contactez_nous"
-        class="contactez-nous d-flex flex-column justify-content-center"
-      >
-        <contactez-nous />
-      </section>
-
-      <section class="footer">
-        <foot />
-      </section>
-    </main>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </div>
 </template>
@@ -143,20 +96,10 @@
 <script>
 import Vue from "vue";
 import VueScrollTo from "vue-scrollto";
-import contactezNous from "../components/contactez-nous.vue";
-
-// Vue.use(VueScrollTo)
-
-// Vue.use(VueScrollTo, );
+import contactezNous from "../../components/contactez-nous.vue";
 
 export default {
   components: { contactezNous },
-  // created(){
-  //   if (process.browser) {
-  //     // let googleTag = document.createElement('script')
-
-  //   }
-  // },
   mounted() {
     setTimeout(() => this.finish(), 2000);
   },
