@@ -103,11 +103,8 @@
       >
         <qui-somme-nous />
       </section>
-      <section>
+      <section id="nos-services" class="mt-4 qui-some-nous d-flex flex-column justify-content-center">
         <nos-services
-          href="#"
-          v-scroll-to="'#element'"
-          @myEvent="pushToSousService"
           class="nos-services"
         />
       </section>

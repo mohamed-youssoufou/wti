@@ -22,7 +22,7 @@
           >
           <b-nav-item href="#" v-scroll-to="'#qui_sommes_nous'"
             ><NuxtLink class="nav-link p-0" to="/#qui_sommes_nous"
-              >Qui sommes nous</NuxtLink
+              >Qui sommes nous ?</NuxtLink
             ></b-nav-item
           >
           <b-nav-item oki href="#" v-scroll-to="'#nos_convictions'"
@@ -31,6 +31,13 @@
             ></b-nav-item
           >
           <b-nav-item-dropdown text="Nos services" right>
+            <b-dropdown-item
+              href="#"
+            >
+              <NuxtLink class="text-dark" to="/#nos-services"
+                >Nos offres</NuxtLink
+              >
+            </b-dropdown-item>
             <b-dropdown-item
               @click="changeService(1)"
               href="#"

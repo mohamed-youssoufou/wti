@@ -11,8 +11,8 @@
           </div>
         </h5>
         <p class="card-text" v-html="detail">
-          
         </p>
+        <p class="link-to float-right"><nuxt-link to="/#contactez_nous">En savoir plus > </nuxt-link></p>
       </div>
     </div>
   </div>
@@ -60,5 +60,8 @@ export default {
   color: #ffffff;
   font-family: fsl;
   font-size: 18px;
+}
+.link-to{
+  color: #515cf5;
 }
 </style>
