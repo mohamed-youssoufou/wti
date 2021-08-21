@@ -118,6 +118,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    vendor: ['aframe']
+    vendor: ['aframe'],
+    maxChunkSize: 300000
   }
 }
