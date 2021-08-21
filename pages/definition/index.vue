@@ -91,7 +91,7 @@
     </header>
     <main role="main">
       <section class="nos-lexique ">
-        <nos-lexique />
+        <nos-definition />
       </section>
       <section class="footer">
         <foot />
@@ -104,11 +104,8 @@
 <script>
 import Vue from "vue";
 import VueScrollTo from "vue-scrollto";
-import contactezNous from "../../components/contactez-nous.vue";
-import NosLexique from "../../components/nos-lexique.vue";
 
 export default {
-  components: { contactezNous, NosLexique },
   mounted() {
     setTimeout(() => this.finish(), 2000);
   },

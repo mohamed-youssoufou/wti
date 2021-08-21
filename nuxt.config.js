@@ -15,6 +15,22 @@ export default {
     //   src: 'https://www.googletagmanager.com/gtag/js?id=G-7LPSCGVLHZ',
     //   async: true,
     // },
+    script: [
+      {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript"
+      },
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+        type: "text/javascript"
+      },
+      {
+        src:
+          "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
+        type: "text/javascript"
+      }
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,7 +38,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/logo_wealth.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/logo_wealth.png' },
+      // { rel: 'stylesheet', type: '', href: 'https://cdn.jsdelivr.net/npm/boosted@5.0.2/dist/css/boosted.min.css' }
     ]
   },
 

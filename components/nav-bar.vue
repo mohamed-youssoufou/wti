@@ -2,46 +2,88 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="">
       <b-navbar-brand v-scroll-to="'#home'" href="#">
-        <div id="app_"></div>
-        <img height="50px" width="100px" src="~/assets/img/log___.png"
-      /></b-navbar-brand>
+        <NuxtLink class="nav-link p-0" to="/">
+          <div id="app_"></div>
+          <img height="50px" width="100px" src="~/assets/img/log___.png" />
+        </NuxtLink>
+      </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-         
-        </b-navbar-nav>
+        <b-navbar-nav> </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          
-          <b-nav-item href="#" v-scroll-to="'#notre_mission'">Notre mission</b-nav-item>
-          <b-nav-item href="#" v-scroll-to="'#qui_sommes_nous'">Qui sommes nous</b-nav-item>
-          <b-nav-item oki href="#" v-scroll-to="'#nos_convictions'">Nos convictions</b-nav-item>
-          <!-- <b-nav-item-dropdown text="Nos services" right>
+          <b-nav-item href="#" v-scroll-to="'#notre_mission'"
+            ><NuxtLink class="nav-link p-0" to="/#notre_mission"
+              >Notre mission</NuxtLink
+            ></b-nav-item
+          >
+          <b-nav-item href="#" v-scroll-to="'#qui_sommes_nous'"
+            ><NuxtLink class="nav-link p-0" to="/#qui_sommes_nous"
+              >Qui sommes nous</NuxtLink
+            ></b-nav-item
+          >
+          <b-nav-item oki href="#" v-scroll-to="'#nos_convictions'"
+            ><NuxtLink class="nav-link p-0" to="/#nos_convictions"
+              >Nos convictions</NuxtLink
+            ></b-nav-item
+          >
+          <b-nav-item-dropdown text="Nos services" right>
             <b-dropdown-item
               @click="changeService(1)"
               href="#"
               v-scroll-to="'#element'"
-              >Conférences et formations blockchain</b-dropdown-item
             >
+              <NuxtLink class="text-dark" to="/#element"
+                >Conférences et formations blockchain</NuxtLink
+              >
+            </b-dropdown-item>
             <b-dropdown-item
               @click="changeService(2)"
               href="#"
               v-scroll-to="'#element'"
-              >Conseils et développement</b-dropdown-item
+            >
+              <NuxtLink class="text-dark" to="/#element"
+                >Conseils et développement</NuxtLink
+              ></b-dropdown-item
             >
             <b-dropdown-item
               @click="changeService(3)"
               href="#"
               v-scroll-to="'#element'"
-              >Crypto-actifs</b-dropdown-item
             >
+              <NuxtLink class="text-dark" to="/#element"
+                >Crypto-actifs</NuxtLink
+              >
+            </b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="#" v-scroll-to="'#nos_projets'">Nos projets</b-nav-item>
-           <b-nav-item href="#"><NuxtLink class="nav-item" to="/lexique">Le lexique</NuxtLink></b-nav-item> -->
-          <b-nav-item href="#" v-scroll-to="'#contactez_nous'">contactez-nous</b-nav-item>
+          <b-nav-item href="#" v-scroll-to="'#nos_projets'">
+            <NuxtLink class="nav-link p-0" to="/#nos_projets"
+              >Nos projets</NuxtLink
+            ></b-nav-item
+          >
+          <b-nav-item-dropdown text="Blockchains" right>
+            <b-dropdown-item href="#">
+              <NuxtLink class="text-dark" to="/definition">Définition</NuxtLink>
+            </b-dropdown-item>
+            <b-dropdown-item href="#">
+              <NuxtLink class="text-dark" to="/cas-d-application"
+                >Cas d'application</NuxtLink
+              ></b-dropdown-item
+            >
+            <b-dropdown-item href="#">
+              <NuxtLink class="text-dark" to="/lexique"
+                >Lexique</NuxtLink
+              >
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item href="#" v-scroll-to="'#contactez_nous'">
+            <NuxtLink class="nav-link p-0" to="/#contactez_nous"
+              >contactez-nous</NuxtLink
+            ></b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -96,7 +138,7 @@ export default {
 </script>
 
 <style>
-#app_>.Typewriter__wrapper {
+#app_ > .Typewriter__wrapper {
   color: #fafafa;
   font-weight: bolder;
 }
