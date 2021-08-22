@@ -4,7 +4,7 @@
       <div class="card-body">
         <h5 class="d-flex flex-row  card-title">
           <div class="pr-2">
-            <img :src="'~/assets/img/'+icone" height=50 width=50 />
+            <img height="70px" width="100px" src="~/assets/img/theme.jpeg" />
           </div>
           <div>
             {{ title }}

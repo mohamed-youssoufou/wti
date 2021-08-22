@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="index">
-    <loader v-if="loading" />
+    <loader v-show="loading" />
     <Particles
       id="tsparticles"
       :options="{

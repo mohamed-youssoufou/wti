@@ -1,7 +1,11 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  generate: {
+    minify: {
+      collapseWhitespace: true
+    }
+  },
   // loading: '~/components/loader.vue',
 
   // Global page headers: https://go.nuxtjs.dev/config-head

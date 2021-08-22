@@ -10,7 +10,7 @@
           :key="service.id"
           :title="service.title"
           :detail="service.detail"
-          :img="service.img"
+          :icone="service.img"
         />
       </VueSlickCarousel>
     </div>
