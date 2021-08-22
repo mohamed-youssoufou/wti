@@ -3,7 +3,7 @@
     <div class="row">
       <h2 class="col-md-12 text-center">Cas d'utilisation</h2>
     </div>
-    <div>
+    <div class="h-100">
       <VueSlickCarousel v-bind="settings">
         <casapp
           v-for="service in domaines"
@@ -11,6 +11,7 @@
           :title="service.title"
           :detail="service.detail"
           :icone="service.img"
+          class="h-100"
         />
       </VueSlickCarousel>
     </div>
@@ -59,89 +60,77 @@ export default {
         {
           id: 1,
           title: "Sport",
-          detail: `
-                    <ul>
-                        <li>Sportifs professionnel</li>
-                        <li>Equipes</li>
-                        <li>Fédérations</li>
-                    </ul>
-                    `,
-          img: "theme.jpeg"
+          detail: `Sportifs professionnel, Equipes, Fédérations`,
+          img: "theme.jpeg",
         },
         {
           id: 2,
           title: "Culture",
           detail: `
-                    <ul>
-                        <li>Artistes</li>
-                        <li>Collectionneurs</li>
-                        <li>Art numérique</li>
-                        <li>producteurs</li>
-                        <li>Cinéastes</li>
-                        <li>Acteurs</li>
-                    </ul>
+          Artistes,
+Collectionneurs,
+producteurs,
+Cinéastes,
+Acteurs,
+Art numérique
                     `,
+          img: "blockchain1.jpeg",
         },
         {
           id: 3,
           title: "Santé",
           detail: `
-                    <ul>
-                        <li>Ordre des médecins</li>
-                        <li>Mutuelles complémentaires</li>
-                        <li>Assurance maladie</li>
-                        <li>Dossier médicale</li>
-                        <li>Ordre des pharmaciens</li>
-                    </ul>
+                   Ordre des médecins,
+Mutuelles complémentaires,
+Assurance maladie,
+Dossier médicale,
+Ordre des pharmaciens
                     `,
+          img: "blockchain2.jpeg",
         },
         {
           id: 4,
           title: "Administration publique",
           detail: `
-                    <ul>
-                        <li>Etat Civil</li>
-                        <li>Cadastre</li>
-                        <li>Marché public</li>
-                        <li>Elections</li>
-                    </ul>
+                    Etat Civil,
+Cadastre,
+Marché public,
+Elections
                     `,
+          img: "theme.jpeg",
         },
         {
           id: 5,
-          title: "Agro-industrie / Agriculture",
+          title: "Agro-industrie/Agriculture",
           detail: `
-                    <ul>
-                        <li>Traçabilité des aliments</li>
-                        <li>Conformité des cultures</li>
-                        <li>Production</li>
-                    </ul>
+                   Traçabilité des aliments,
+Conformité des cultures,
+Production
                     `,
+          img: "theme.jpeg",
         },
         {
           id: 6,
           title: "Education",
           detail: `
-                    <ul>
-                        <li>Diplômes et relevés de notes</li>
-                        <li>Grandes écoles</li>
-                        <li>Universités</li>
-                        <li>Collèges et lycées</li>
-                    </ul>
+                   Diplômes et relevés de notes
+Grandes écoles
+Universités
+Collèges et lycées
                     `,
+          img: "theme.jpeg",
         },
         {
           id: 8,
           title: "Professions règlementées",
           detail: `
-                    <ul>
-                        <li>Notaires</li>
-                        <li>Experts comptables</li>
-                        <li>Avocats</li>
-                        <li>Géomètres</li>
-                        <li>Huissiers justice</li>
-                    </ul>
+                   Notaires,
+Experts comptables,
+Avocats,
+Géomètres,
+Huissiers justice
                     `,
+          img: "theme.jpeg",
         },
         {
           id: 9,
@@ -149,6 +138,7 @@ export default {
           detail: `
                     
                     `,
+          img: "theme.jpeg",
         },
         {
           id: 10,
@@ -156,6 +146,7 @@ export default {
           detail: `
                     
                     `,
+          img: "theme.jpeg",
         },
         {
           id: 11,
@@ -163,6 +154,7 @@ export default {
           detail: `
                     
                     `,
+          img: "theme.jpeg",
         },
         {
           id: 12,
@@ -170,6 +162,7 @@ export default {
           detail: `
                     
                     `,
+          img: "theme.jpeg",
         },
         {
           id: 12,
@@ -177,6 +170,7 @@ export default {
           detail: `
                     
                     `,
+          img: "theme.jpeg",
         },
       ],
     };
@@ -185,8 +179,11 @@ export default {
 </script>
 
 <style scoped>
-.nos-cas{
-    min-height: 100vh
+.slick-list {
+  height: 100%;
+}
+.nos-cas {
+  min-height: 100vh;
 }
 .heightLight {
   color: #2a80b9;
