@@ -55,7 +55,7 @@ export default {
         slidesToShow: 3,
         slidesToScroll: 1,
         touchThreshold: 5,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         pauseOnDotsHover: true,
         arrows: true,
@@ -237,6 +237,7 @@ De plus nous prenons en charge le lancement des processus ICO, IEO, FTO, INO`,
   font-family: fsl;
   font-weight: bolder;
   color: white;
+  font-size: 30px;
 }
 .cover-trios a.trio-cover {
   display: block;

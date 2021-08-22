@@ -45,12 +45,12 @@
           </a>
         </li>
         <li>
-          <span>© </span>
+          <span> </span>
         </li>
         <li>
           <span>
-            Créer par
-            <a href="#" target="_blank">wit</a>
+            © wealthtech Innovations 2020
+            <!-- <a href="#" target="_blank">wit</a> -->
           </span>
         </li>
       </ul>

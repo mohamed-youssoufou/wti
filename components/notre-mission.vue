@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title">Notre mission</h2>
+      <h4 class="col-md-12 title">Notre mission</h4>
       <p class="col-md-12 btn-body-text">
         Notre mission est de contribuer activement au développement de
         l’économie numérique en apportant aux entreprises, aux institutions et
@@ -25,7 +25,7 @@ export default {};
   opacity: 1;
   font-family: Spacegrotesk, sans-serif;
   color: #ffffff;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.2em;
   font-weight: 700;
   text-align: center;
@@ -42,7 +42,7 @@ p.btn-body-text {
 }
 @media screen and (min-width: 375px) {
   .title {
-    font-size: 40px;
+    font-size: 30px;
   }
   .p.btn-body-text {
     text-align: center;

@@ -1,30 +1,32 @@
 <template>
-  <div class="p-2 h-100 card-main-element" style="cursor: pointer">
+  <div class="p-2 h-100 card-main-element d-flex flex-column justify-content-between" style="cursor: pointer">
     <div class="row">
       <div class="col-md-12">
-        <div
-          class="img"
-          :style="{
-            backgroundImage: 'url(' + require(`~/assets/img/${icone}`) + ')',
-          }"
-        ></div>
+        <p class="text-center">
+          <span class="project_number  text-white">{{ id }}</span>
+        </p>
       </div>
     </div>
-    <div class="">
-      <div class="row">
+    <div class="h-100 d-flex flex-column justify-content-between">
+      <div class="row h-75">
         <h2 class="col-md-12 title font-weight-bold">
           {{ title }}
         </h2>
       </div>
-      <div class="row detail">
-        <h6 class="col-md-12 h-75 text-white body" v-html="detail"></h6>
+      <div class="row h-25 detail">
         <p
-          class="col-md-12 h-25 link-to d-flex flex-row justify-content-between"
+          class="
+            col-md-12
+            w-50
+            link-to
+            d-flex
+            flex-column
+            justify-content-between
+          "
         >
-          <span class="text-white">Decouvrez nos solutions</span>
-          <nuxt-link class="plus" to="/#contactez_nous"
+          <a class="plus text-center" v-scroll-to="'#contactez_nous'"
             >En savoir plus
-          </nuxt-link>
+          </a>
         </p>
       </div>
     </div>
@@ -42,6 +44,10 @@ export default {
       type: String,
       default: "card-detail",
     },
+    id: {
+      type: Number,
+      default: 1,
+    },
     color: {
       type: String,
       default: "#4faaf0",
@@ -55,6 +61,15 @@ export default {
 </script>
 
 <style scoped>
+.project_number {
+  border: 1px solid grey;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #171f30;
+  color: white;
+}
 .plus {
   font-family: fsl;
   border-radius: 3px;
@@ -77,7 +92,7 @@ export default {
 .title {
   margin-top: 10px;
   font-size: 28px;
-  min-height: 60px;
+  min-height: 150px;
   line-height: 32px;
   color: #ffffff;
   font-weight: 801;
@@ -110,5 +125,4 @@ export default {
 .link-to {
   color: #515cf5;
 }
-
 </style>

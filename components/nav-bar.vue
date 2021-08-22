@@ -71,7 +71,7 @@
               >Nos projets</NuxtLink
             ></b-nav-item
           >
-          <b-nav-item-dropdown text="Blockchains" right>
+          <b-nav-item-dropdown text="Blockchain" right>
             <b-dropdown-item href="#">
               <NuxtLink class="text-dark" to="/definition">Définition</NuxtLink>
             </b-dropdown-item>

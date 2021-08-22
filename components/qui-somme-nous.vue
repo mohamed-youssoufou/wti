@@ -54,7 +54,7 @@ p.btn-body-text {
 }
 @media screen and (min-width: 375px){
   .title {
-    font-size: 40px;
+   font-size: 30px;
   }
   .p.btn-body-text {
     text-align: center;

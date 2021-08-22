@@ -77,7 +77,7 @@ export default {
   opacity: 1;
   font-family: Spacegrotesk, sans-serif;
   color: #ffffff;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.2em;
   font-weight: 700;
   text-align: center;
@@ -108,7 +108,7 @@ a {
 }
 @media screen and (min-width: 375px) {
   .title {
-    font-size: 40px;
+    font-size: 30px;
   }
   .p.btn-body-text {
     text-align: center;
