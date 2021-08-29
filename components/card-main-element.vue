@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 card-main-element" @click="changeService(id)" style="cursor: pointer">
+  <div class="p-2 card-main-element" v-scroll-to="'#element'" @click="changeService(id)" style="cursor: pointer">
     <!-- <div
       class="card"
       :style="'background-color:' + color + ';cursor:pointer'"
@@ -16,7 +16,7 @@
     </div> -->
     <div class="row" >
       <div class="col-md-12">
-        <div class="img" :style="{ backgroundImage: 'url(' + img + ')' }"></div>
+        <div class="img" :style="{ backgroundImage: 'url(' +require(`~/assets/img/${img}`)+')' }"></div>
       </div>
     </div>
     <div class="row">
@@ -70,10 +70,10 @@ export default {
   font-family: fsl;
   border-radius: 3px;
   margin-bottom: 3px;
-  color: black;
+  color: white;
   padding-left: 4px;
   padding-right: 7px;
-  background: linear-gradient(180deg, #0ceacc, #00fea4);
+  background: #2a80b9;
 }
 .detail {
   font-family: fsl;
@@ -110,7 +110,7 @@ export default {
 }
 .img {
   background-size: cover;
-  height: 200px;
+  height: 300px;
   border-radius: 10px;
 }
 .card-text {

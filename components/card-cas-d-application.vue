@@ -5,7 +5,7 @@
         <div
           class="img"
           :style="{
-            backgroundImage: 'url(' + require(`~/assets/img/${icone}`) + ')',
+            backgroundImage: 'url(' + require(`~/assets/img/cas_applications/${icone}`) + ')',
           }"
         ></div>
       </div>
@@ -59,10 +59,10 @@ export default {
   font-family: fsl;
   border-radius: 3px;
   margin-bottom: 3px;
-  color: black;
+  color: white;
   padding-left: 4px;
   padding-right: 7px;
-  background: linear-gradient(180deg, #0ceacc, #00fea4);
+  background: #2a80b9;
 }
 .detail {
   font-family: fsl;

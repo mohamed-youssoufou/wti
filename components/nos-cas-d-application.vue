@@ -1,7 +1,23 @@
 <template>
   <div class="container nos-cas">
     <div class="row">
-      <h2 class="col-md-12 text-center">Cas d'utilisation</h2>
+      <h2 class="col-md-12 text-justify">Cas d'utilisation</h2>
+      <p class="col-md-12 text-left">
+        La Blockchain vous permet de simplifier la tenue des dossiers et de
+        rationaliser les flux de travail partagés. L'implémentation de cette
+        technologie dans votre organisation vous permettra sûrement d'accélérer
+        votre développement. C'est pourquoi nous vous proposons de découvrir de
+        quelle façon implémenter la blockchain dans votre secteur d'activité. La
+        Blockchain a passé le cap de l'évangélisation. Il n'est plus nécessaire
+        de rappeler l'intérêt que représente cette technologie. Les cas d'usage
+        sont infinis et nombre d'entreprises sont passées du stade de PoC (proof
+        of concept) aux réalisations bien concrètes. Quelques exemples : <br />
+
+        - GE Aviation utilise la blockchain pour simplifier le suivi des pièces des avions, de l’usine au vol. <br />
+        - Insurwave utilise des registres communs distribués pour réduire les risques et les expositions pour les clients, les courtiers, les assureurs et les tiers du secteur des assurances. <br />
+        - Bühler utilise la technologie de blockchain pour suivre les cultures de la ferme à l’assiette, ce qui lui permet de produire chaque jour des aliments sains et sûrs pour deux milliards de personnes. <br />
+        - Nasdaq apporte aux marchés financiers la technologie blockchain pour gérer l’exécution, le paiement et le règlement des transactions à partir de plusieurs blockchains et mécanismes de paiement.
+      </p>
     </div>
     <div class="h-100">
       <VueSlickCarousel v-bind="settings">
@@ -61,116 +77,115 @@ export default {
           id: 1,
           title: "Sport",
           detail: `Sportifs professionnel, Equipes, Fédérations`,
-          img: "theme.jpeg",
+          img: "Blockchain-sport-Wealthtech.png",
         },
         {
           id: 2,
           title: "Culture",
           detail: `
-          Artistes,
-Collectionneurs,
-producteurs,
-Cinéastes,
-Acteurs,
-Art numérique
+            Artistes,
+            Collectionneurs,
+            producteurs,
+            Cinéastes,
+            Acteurs,
+            Art numérique
                     `,
-          img: "blockchain1.jpeg",
+          img: "blockchain-culture.png",
         },
         {
           id: 3,
           title: "Santé",
           detail: `
-                   Ordre des médecins,
-Mutuelles complémentaires,
-Assurance maladie,
-Dossier médicale,
-Ordre des pharmaciens
-                    `,
-          img: "blockchain2.jpeg",
+                  Ordre des médecins,
+                  Mutuelles complémentaires,
+                  Assurance maladie,
+                  Dossier médicale,
+                  Ordre des pharmaciens
+                  `,
+          img: "Blockchain-santé.png",
         },
         {
           id: 4,
           title: "Administration publique",
           detail: `
-                    Etat Civil,
-Cadastre,
-Marché public,
-Elections
+                  Etat Civil,
+                  Cadastre,
+                  Marché public,
+                  Elections
                     `,
-          img: "theme.jpeg",
+          img: "blockchain-Administration-wealthtech.png",
         },
         {
           id: 5,
           title: "Agro-industrie/Agriculture",
           detail: `
-                   Traçabilité des aliments,
-Conformité des cultures,
-Production
-                    `,
-          img: "theme.jpeg",
+                  Traçabilité des aliments,
+                  Conformité des cultures,
+                  Production
+          `,
+          img: "blockchain-agriculture-Agro-industrie.png",
         },
         {
           id: 6,
           title: "Education",
           detail: `
-                   Diplômes et relevés de notes
-Grandes écoles
-Universités
-Collèges et lycées
-                    `,
-          img: "theme.jpeg",
+                  Diplômes et relevés de notes
+                  Grandes écoles
+                  Universités
+                  Collèges et lycées
+                  `,
+          img: "blockchain-education.png",
         },
-        {
-          id: 8,
-          title: "Professions règlementées",
-          detail: `
-                   Notaires,
-Experts comptables,
-Avocats,
-Géomètres,
-Huissiers justice
-                    `,
-          img: "theme.jpeg",
-        },
+        // {
+        //   id: 8,
+        //   title: "Professions règlementées",
+        //   detail: `
+        //           Notaires,
+        //           Experts comptables,
+        //           Avocats,
+        //           Géomètres,
+        //           Huissiers justice
+        //             `,
+        //   img: "block-santé.png",
+        // },
         {
           id: 9,
           title: "Hôtellerie",
           detail: `
-                    
                     `,
-          img: "theme.jpeg",
+          img: "blockchain-hôtellerie.png",
         },
         {
           id: 10,
           title: "Assurance",
           detail: `
-                    
+
                     `,
-          img: "theme.jpeg",
+          img: "blockchain-assurance-wealthtech.png",
         },
         {
           id: 11,
           title: "Média et publicité",
           detail: `
-                    
+
                     `,
-          img: "theme.jpeg",
+          img: "blockchain-média.png",
         },
         {
           id: 12,
           title: "Banque et Finance",
           detail: `
-                    
+
                     `,
-          img: "theme.jpeg",
+          img: "blockchain-Banque-et-finance.png",
         },
         {
           id: 12,
           title: "Supply Chain",
           detail: `
-                    
+
                     `,
-          img: "theme.jpeg",
+          img: "Blockchain-supply-chain.png",
         },
       ],
     };

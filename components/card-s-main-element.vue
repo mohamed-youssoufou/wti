@@ -4,7 +4,9 @@
       <div class="card-body d-flex flex-column justify-content-between">
         <h5 class="d-flex flex-column card-title">
           <div class="pr-2 d-flex justify-content-center">
-            <font-awesome-icon class="icone" :icon="['fa', icone]" />
+            <!-- <font-awesome-icon class="icone" :icon="['fa', icone]" /> -->
+
+            <img :src="require(`~/assets/img/services/${icone}`)" height="100px" width="100px" />
           </div>
           <div class="text-center">
             {{ title }}
@@ -13,7 +15,7 @@
             {{ detail }}
           </p>
         </h5>
-        <div class="row detail h-100">
+        <!-- <div class="row detail h-100">
           <p
             class="
               col-md-12
@@ -29,7 +31,7 @@
               >En savoir plus
             </nuxt-link>
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

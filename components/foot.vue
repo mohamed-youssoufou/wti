@@ -1,20 +1,118 @@
 <template>
   <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+          <div class="wrapper_second_about">
+            <div class="wrapper_first_image">
+              <a href="index.html"
+                ><img
+                  src="/static/images/logo.png"
+                  class="img-responsive"
+                  alt="logo"
+              /></a>
+            </div>
+            <p class="text-justify">
+              Nous vous accompagnons de bout en bout, de l’acculturation de vos
+              collaborateurs jusqu’à la mise en production de vos applications
+              blockchain et vous conseillons pour vos projets liés aux actifs
+              numériques.
+            </p>
+            <div class="counter-section">
+              <div class="ft_about_icon float_left">
+                <i class="flaticon-user"></i>
+                <div class="ft_abt_text_wrapper">
+                  <p class="timer">IMAGE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12 col-sm-4">
+          <div class="wrapper_second_useful">
+            <h4>Liens utiles</h4>
+
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-angle-right"></i>Notre mission</a>
+              </li>
+
+              <li>
+                <a href="#"
+                  ><i class="fa fa-angle-right"></i>Qui sommes nous ?</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-angle-right"></i>Nos convictions</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-angle-right"></i>Nos services</a>
+                <ul class="s-service">
+                  <li><i class="fa fa-angle-right"></i>Nos offres</li>
+                  <li><i class="fa fa-angle-right"></i>Conferences et formations</li>
+                  <li><i class="fa fa-angle-right"></i>Conseils et développement</li>
+                  <li><i class="fa fa-angle-right"></i>Crypto-actifs</li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-angle-right"></i>Nos projets</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-angle-right"></i>Blockchain</a>
+                <ul class="s-service">
+                  <li><i class="fa fa-angle-right"></i>Nos offres</li>
+                  <li><i class="fa fa-angle-right"></i>Conferences et formations</li>
+                  <li><i class="fa fa-angle-right"></i>Conseils et développement</li>
+                  <li><i class="fa fa-angle-right"></i>Crypto-actifs</li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-angle-right"></i>Contactez-nous</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+          <div class="wrapper_second_useful wrapper_second_useful_2">
+            <h4>Nous contacter</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="flaticon-mail"></i
+                  >contact@wealthtechinnovations.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="flaticon-language"></i
+                  >www.wealthtechinnovations.com</a
+                >
+              </li>
+              <li>
+                <i class="flaticon-placeholder"></i>Abidjan, cocody, riviera
+                palmeraie Immeuble Gold Africa Côte d'ivoire
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="w-100" style="background-color: white" />
+      </div>
+    </div>
     <nav class="footer__navigation">
       <ul class="footer__navigation-list">
-        <!-- <li>
-          <a href="/agb">AGB</a>
-        </li>
-        <li>
-          <a href="/privacy">Datenschutz</a>
-        </li>
-        <li>
-          <a href="/imprint">Impressum</a>
-        </li> -->
-        
+
         <li class="footer__sm-links">
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=100071166496735">
-            <svg class="icon-facebook" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/wealthtechinnovations"
+          >
+            <svg
+              class="icon-facebook"
+              viewBox="0 0 42 42"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <title>Facebook</title>
               <path
                 d="M0 21a21 21 0 1 1 42 0 21 21 0 0 1-42 0zm23.19 12.35V21.92h3.15l.42-3.93H23.2V16c0-1.02.1-1.57 1.58-1.57h1.97V10.5h-3.16c-3.78 0-5.12 1.91-5.12 5.12V18H16.1v3.93h2.36v11.43h4.73z"
@@ -34,7 +132,11 @@
             </svg>
           </a> -->
           <a target="_blank" href="https://twitter.com/Wealthtechinno?s=08">
-            <svg class="twitter" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="twitter"
+              viewBox="0 0 42 42"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <title>Twitter</title>
               <path
                 d="M0 21a21 21 0 1 1 42 0 21 21 0 0 1-42 0zm21.37-2.93l.05.73-.74-.1c-2.67-.33-5-1.5-7-3.43l-.96-.97-.25.71a4.28 4.28 0 0 0 .91 4.4c.59.62.46.7-.56.33-.35-.11-.66-.2-.69-.16-.1.1.25 1.45.53 1.99a4.74 4.74 0 0 0 2.01 1.9l.72.34-.85.01c-.82 0-.85.02-.76.33.3.96 1.45 1.99 2.74 2.43l.91.31-.79.48a8.27 8.27 0 0 1-3.94 1.1c-.66 0-1.2.07-1.2.11 0 .15 1.8.98 2.83 1.3 3.13.97 6.85.56 9.64-1.09a12.9 12.9 0 0 0 4.9-5.75c.5-1.2 1-3.4 1-4.45 0-.68.04-.77.86-1.59.48-.47.94-1 1.03-1.14.14-.28.13-.28-.62-.03-1.25.44-1.43.39-.8-.28.45-.48.99-1.34.99-1.59 0-.04-.22.03-.47.16a8.2 8.2 0 0 1-1.3.5l-.79.26-.72-.49c-.4-.27-.95-.56-1.24-.65-.75-.2-1.9-.18-2.57.06-1.84.67-3 2.39-2.87 4.27z"
@@ -68,6 +170,49 @@ export default {};
   color: #fff;
   font-weight: 500;
 }
+
+.wrapper_second_useful ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper_second_links {
+    padding-top: 75px;
+    float: left;
+}
+.wrapper_second_useful ul li {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.wrapper_second_useful ul li a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    text-transform: capitalize;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.wrapper_second_useful ul li a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    text-transform: capitalize;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.wrapper_second_useful ul li i {
+    color: rgba(255, 255, 255, 0.9);
+    margin-right: 10px;
+    font-size: 14px;
+}
+ul.s-service{
+      margin-left: 25px;
+}
+
 .footer__navigation {
   margin: 0 auto;
   padding: 4em 1em 3em;
@@ -75,14 +220,14 @@ export default {};
   line-height: 1;
 }
 .footer__navigation-list {
-    font-size: 0.875em;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    /* justify-content: center; */
-    align-items: center;
+  font-size: 0.875em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* justify-content: center; */
+  align-items: center;
 }
 @media screen and (min-width: 69em) {
   .footer__navigation-list {
@@ -90,54 +235,54 @@ export default {};
   }
 }
 .footer__navigation-list {
-    font-size: 0.875em;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
+  font-size: 0.875em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
 }
 ul {
-    /* display: block;
+  /* display: block;
     list-style-type: disc; */
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 .footer__sm-links svg {
-    width: 3em;
-    height: 3em;
+  width: 3em;
+  height: 3em;
 }
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 .footer__navigation-list li {
-    margin: 0 1em 1em;
+  margin: 0 1em 1em;
 }
 
 .footer__sm-links {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 .footer__navigation-list a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.5s ease-out;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
 }
 .footer__navigation-list li {
-    margin: 0 1em 1em;
+  margin: 0 1em 1em;
 }
 
-.facebook{
-  color: #4267B2;
+.facebook {
+  color: #4267b2;
 }
-.twitter{
-  color: #1DA1F2;
+.twitter {
+  color: #1da1f2;
 }
-.instagram{
+.instagram {
   color: #8a3ab9;
 }
 </style>

@@ -1,6 +1,9 @@
 <template>
   <div class="container">
     <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="col-md-12 title text-center"><img src="~/assets/img/blockchain-title.png" height="160px" /></h2>
+      </div>
       <h2 class="col-md-12 text-center">Qu’est-ce que la Blockchain ?</h2>
       <p class="col-md-12 text-justify"><br/>
         Déployée à partir de 2008, la blockchain est une technologie de stockage

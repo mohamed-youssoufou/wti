@@ -43,14 +43,16 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logo_wealth.png' },
-      // { rel: 'stylesheet', type: '', href: 'https://cdn.jsdelivr.net/npm/boosted@5.0.2/dist/css/boosted.min.css' }
+      { rel: 'stylesheet', type: '', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' },
+      // { rel: 'stylesheet\, type: '', href: 'https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "~/assets/css/main.css",
-    "~/assets/css/work.css"
+    "~/assets/css/work.css",
+    "~/assets/css/flaticon.css"
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

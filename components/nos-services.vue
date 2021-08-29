@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title">Nos services</h2>
+      <h2 class="col-md-12 title"><img src="~/assets/img/nos-services.png" height="160px" /></h2>
       <p class="col-md-12 btn-body-text">
         Wealthtech Innovations accompagne les particuliers, les associations,
         les organisations, les institutions dans la découverte, l’exploration et
@@ -39,7 +39,7 @@ export default {
           detail:
             "Les blockchains et les actifs numérique peuvent sembler difficiles à comprendre les pédagogiques, ou nous nous adaptons au niveau et au métier des participants pour faire comprendre simplement les enjeux, usages et fonctionnement des blockchains et cryptoactifs",
           color: "#4faaf0",
-          img: "http://blockchain101.fr/wp-content/uploads/2018/02/Blockchain-Funds-300x300.png",
+          img: "004-conference.png",
         },
         {
           id: 2,
@@ -47,7 +47,7 @@ export default {
           detail:
             "Nous sommes une équipe d’experts qui vous accompagnent à chaque étape de vos projets blockchain.",
           color: "#fac54b",
-          img: "https://www.grandcalais.fr/wp-content/uploads/2016/09/conseil-300x295.png",
+          img: "004-conference.png",
         },
         {
           id: 3,
@@ -55,14 +55,13 @@ export default {
           detail:
             "Nous vous proposons des services et formations pour comprendre l’utilité des actifs numériques partant de l’analyser du projets cryptos actifs à la détention et l’échange des cryptos-actifs",
           color: "#c39ded",
-          img: "http://blockchain101.fr/wp-content/uploads/2018/02/Blockchain-Funds-300x300.png",
+          img: "004-conference.png",
         },
       ],
     };
   },
   methods: {
     changeService(id) {
-      console.log("oki2", id);
       this.$emit("myEvent", id);
     },
   },

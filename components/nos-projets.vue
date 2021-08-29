@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-md-12 title text-center">Nos projets</div>
+      <h2 class="col-md-12 title text-center"><img src="~/assets/img/nos-projets.png" height="160px" /></h2>
       <p class="btn-body-text">
         À l'aune de la révolution numérique impulsée par le développement et
         l’implémentation des nouvelles technologies, nous sommes convaincus que

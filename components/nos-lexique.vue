@@ -23,7 +23,7 @@
               <h5 class="mb-0">
                 <button
                   class="btn btn-link panel"
-                  style="color: #2a80b9"
+                  style="color: white;"
                   data-toggle="collapse"
                   :data-target="'#collapse' + lexique.id"
                   aria-expanded="true"

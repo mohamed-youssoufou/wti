@@ -25,6 +25,7 @@
       </section>
       <section id="nos-services" class="mt-4 qui-some-nous d-flex flex-column justify-content-center">
         <nos-services
+          @myEvent="pushToSousService"
           class="nos-services"
         />
       </section>
