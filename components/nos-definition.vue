@@ -20,9 +20,9 @@
         Le champ d'application de la blockchain est bien plus large que celui des cryptomonnaies / cryptoactifs 
         (assurance, sport, finance, immobilier, art, logistique, énergie, industrie, santé, agriculture, services, hôtellerie, ...)<br /><br />
         <b class="heightLight">Blockchain publique</b> :Lorsque l’historique des informations et des transactions 
-        d’une blockchain est accessible et ouverte à tout le monde, on parle de Blockchain publique.
-        Exemple : <a class="heightLight" target="_blank"  href="https://ethereum.org/fr">La blockchain ETHEREUM </a> (ETHscan) <a class="heightLight" target="_blank" href="https://academy.binance.com/fr/articles/an-introduction-to-binance-smart-chain-bsc">La Blockchain Binance Smart Chain</a> (Bscan)<br/>
-        <b class="heightLight">Blockchain Privée</b> : Lorsqu’une Blockchain est conçue pour les besoins spécifiques d’une entreprise, d’une organisation ou d’un consortium. On parle d’une blockchain privée, car l’accès à l’inscription, à la consultation et au partage des informations de la blockchain peut être restreint à des utilisateurs bien définis.Les blockchains privées sont recommandées pour les entreprises et les institutions
+        d’une blockchain est accessible et ouverte à tout le monde, on parle de Blockchain publique.<br />
+        Exemple : <a class="heightLight" target="_blank"  href="https://ethereum.org/fr">La blockchain ETHEREUM </a> (ETHscan) <a class="heightLight" target="_blank" href="https://academy.binance.com/fr/articles/an-introduction-to-binance-smart-chain-bsc">la blockchain Binance Smart Chain</a> (Bscan)<br/>
+        <b class="heightLight">Blockchain privée</b> : Lorsqu’une blockchain est conçue pour les besoins spécifiques d’une entreprise, d’une organisation ou d’un consortium. On parle d’une blockchain privée, car l’accès à l’inscription, à la consultation et au partage des informations de la blockchain peut être restreint à des utilisateurs bien définis.Les blockchains privées sont recommandées pour les entreprises et les institutions
       </p>
       <h2 class="col-md-12 text-center"><br/>
         Caractéristiques

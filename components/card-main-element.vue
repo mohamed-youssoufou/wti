@@ -16,7 +16,7 @@
     </div> -->
     <div class="row" >
       <div class="col-md-12">
-        <div class="img" :style="{ backgroundImage: 'url(' +require(`~/assets/img/${img}`)+')' }"></div>
+        <div class="img" :style="{ backgroundImage: 'url(' +require(`~/assets/img/services/${img}`)+')' }"></div>
       </div>
     </div>
     <div class="row">
@@ -110,7 +110,7 @@ export default {
 }
 .img {
   background-size: cover;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
 }
 .card-text {

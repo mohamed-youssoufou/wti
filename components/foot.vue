@@ -5,12 +5,12 @@
         <div class="col-lg-4 col-md-6 col-12 col-sm-12">
           <div class="wrapper_second_about">
             <div class="wrapper_first_image">
-              <a href="index.html"
+              <!-- <a href="index.html"
                 ><img
                   src="/static/images/logo.png"
                   class="img-responsive"
                   alt="logo"
-              /></a>
+              /></a> -->
             </div>
             <p class="text-justify">
               Nous vous accompagnons de bout en bout, de l’acculturation de vos
@@ -20,9 +20,16 @@
             </p>
             <div class="counter-section">
               <div class="ft_about_icon float_left">
-                <i class="flaticon-user"></i>
+                <!-- <i class="flaticon-user"></i> -->
                 <div class="ft_abt_text_wrapper">
-                  <p class="timer">IMAGE</p>
+                  <img  />
+                  <img
+                    :src="require(`~/assets/img/services/image-footer.png`)" 
+                    height="150px" 
+                    width="150px"
+                    class="img-responsive"
+                    alt="logo"
+                  />
                 </div>
               </div>
             </div>
@@ -50,8 +57,12 @@
                 <a href="#"><i class="fa fa-angle-right"></i>Nos services</a>
                 <ul class="s-service">
                   <li><i class="fa fa-angle-right"></i>Nos offres</li>
-                  <li><i class="fa fa-angle-right"></i>Conferences et formations</li>
-                  <li><i class="fa fa-angle-right"></i>Conseils et développement</li>
+                  <li>
+                    <i class="fa fa-angle-right"></i>Conferences et formations
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-right"></i>Conseils et développement
+                  </li>
                   <li><i class="fa fa-angle-right"></i>Crypto-actifs</li>
                 </ul>
               </li>
@@ -61,10 +72,14 @@
               <li>
                 <a href="#"><i class="fa fa-angle-right"></i>Blockchain</a>
                 <ul class="s-service">
-                  <li><i class="fa fa-angle-right"></i>Nos offres</li>
-                  <li><i class="fa fa-angle-right"></i>Conferences et formations</li>
-                  <li><i class="fa fa-angle-right"></i>Conseils et développement</li>
-                  <li><i class="fa fa-angle-right"></i>Crypto-actifs</li>
+                  <li><i class="fa fa-angle-right"></i>Définition</li>
+                  <li>
+                    <i class="fa fa-angle-right"></i>Cas d'application
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-right"></i>Lexique
+                  </li>
+                  <!-- <li><i class="fa fa-angle-right"></i>Crypto-actifs</li> -->
                 </ul>
               </li>
               <li>
@@ -76,7 +91,7 @@
 
         <div class="col-lg-4 col-md-6 col-12 col-sm-12">
           <div class="wrapper_second_useful wrapper_second_useful_2">
-            <h4>Nous contacter</h4>
+            <h4>Contactez-nous</h4>
             <ul>
               <li>
                 <a href="#"
@@ -102,7 +117,6 @@
     </div>
     <nav class="footer__navigation">
       <ul class="footer__navigation-list">
-
         <li class="footer__sm-links">
           <a
             target="_blank"
@@ -172,45 +186,45 @@ export default {};
 }
 
 .wrapper_second_useful ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .wrapper_second_links {
-    padding-top: 75px;
-    float: left;
+  padding-top: 75px;
+  float: left;
 }
 .wrapper_second_useful ul li {
-    margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
 }
 .wrapper_second_useful ul li a {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 16px;
-    text-transform: capitalize;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .wrapper_second_useful ul li a {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 16px;
-    text-transform: capitalize;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .wrapper_second_useful ul li i {
-    color: rgba(255, 255, 255, 0.9);
-    margin-right: 10px;
-    font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-right: 10px;
+  font-size: 14px;
 }
-ul.s-service{
-      margin-left: 25px;
+ul.s-service {
+  margin-left: 25px;
 }
 
 .footer__navigation {

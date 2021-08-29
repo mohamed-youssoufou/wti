@@ -1,23 +1,8 @@
 <template>
   <div class="container nos-cas">
     <div class="row">
-      <h2 class="col-md-12 text-justify">Cas d'utilisation</h2>
-      <p class="col-md-12 text-left">
-        La Blockchain vous permet de simplifier la tenue des dossiers et de
-        rationaliser les flux de travail partagés. L'implémentation de cette
-        technologie dans votre organisation vous permettra sûrement d'accélérer
-        votre développement. C'est pourquoi nous vous proposons de découvrir de
-        quelle façon implémenter la blockchain dans votre secteur d'activité. La
-        Blockchain a passé le cap de l'évangélisation. Il n'est plus nécessaire
-        de rappeler l'intérêt que représente cette technologie. Les cas d'usage
-        sont infinis et nombre d'entreprises sont passées du stade de PoC (proof
-        of concept) aux réalisations bien concrètes. Quelques exemples : <br />
-
-        - GE Aviation utilise la blockchain pour simplifier le suivi des pièces des avions, de l’usine au vol. <br />
-        - Insurwave utilise des registres communs distribués pour réduire les risques et les expositions pour les clients, les courtiers, les assureurs et les tiers du secteur des assurances. <br />
-        - Bühler utilise la technologie de blockchain pour suivre les cultures de la ferme à l’assiette, ce qui lui permet de produire chaque jour des aliments sains et sûrs pour deux milliards de personnes. <br />
-        - Nasdaq apporte aux marchés financiers la technologie blockchain pour gérer l’exécution, le paiement et le règlement des transactions à partir de plusieurs blockchains et mécanismes de paiement.
-      </p>
+      <h2 class="col-md-12 text-center">Cas d'application</h2>
+      
     </div>
     <div class="h-100">
       <VueSlickCarousel v-bind="settings">
@@ -30,6 +15,25 @@
           class="h-100"
         />
       </VueSlickCarousel>
+    </div>
+    <div class="row">
+      <p class="col-md-12 mt-4 text-left">
+        La Blockchain vous permet de simplifier la tenue des dossiers et de
+        rationaliser les flux de travail partagés. L'implémentation de cette
+        technologie dans votre organisation vous permettra sûrement d'accélérer
+        votre développement. C'est pourquoi nous vous proposons de découvrir de
+        quelle façon implémenter la blockchain dans votre secteur d'activité. La
+        Blockchain a passé le cap de l'évangélisation. Il n'est plus nécessaire
+        de rappeler l'intérêt que représente cette technologie. Les cas d'usage
+        sont infinis et nombre d'entreprises sont passées du stade de PoC (proof
+        of concept) aux réalisations bien concrètes. Quelques exemples : <br />
+
+        <ul>
+          <li>GE Aviation utilise la blockchain pour simplifier le suivi des pièces des avions, de l’usine au vol.</li>
+          <li>Bühler utilise la technologie de blockchain pour suivre les cultures de la ferme à l’assiette, ce qui lui permet de produire chaque jour des aliments sains et sûrs pour deux milliards de personnes.</li>
+          <li>Nasdaq apporte aux marchés financiers la technologie blockchain pour gérer l’exécution, le paiement et le règlement des transactions à partir de plusieurs blockchains et mécanismes de paiement.</li>
+        </ul>
+      </p>
     </div>
   </div>
 </template>

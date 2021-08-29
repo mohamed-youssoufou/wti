@@ -103,24 +103,24 @@ export default {
             "Nous intervenons auprès des professionnels métier (professions règlements) dans l’optique de proposer des solutions basées sur les blockchains et cryptoactifs : « Spécific use cases ».",
           color: "",
         },
-        // {
-        //   parentId: 1,
-        //   id: 4,
-        //   icone: "link",
-        //   title: "Interventions Institutions publiques et privée",
-        //   detail:
-        //     "Nous intervenons auprès des institutions publiques et privée en tant que consultants ou formateurs afin de donner une vision stratégique de l’utilité des blockchains et cryptoactifs. Notre intervention peut s’étendre à la réflexion ou la réalisation de projet concrets",
-        //   color: "#9dedd1",
-        // },
-//         {
-//           parentId: 1,
-//           id: 5,
-//           icone: "users",
-//           title: "Conférences tout public",
-//           detail: `Nous proposons des conférences en ligne Grand public pour Acculturer les particuliers, les équipes et les métiers aux impacts et avantages des blockchains et cryptoactifs.
-// Ces conférences grand public vous permettront comprendre un projet lié aux cryptoactifs`,
-//           color: "#ffc20b",
-//         },
+        {
+          parentId: 1,
+          id: 4,
+          icone: "Start-operations-icon.png",
+          title: "Interventions Institutions publiques et privée",
+          detail:
+            "Nous intervenons auprès des institutions publiques et privée en tant que consultants ou formateurs afin de donner une vision stratégique de l’utilité des blockchains et cryptoactifs. Notre intervention peut s’étendre à la réflexion ou la réalisation de projet concrets",
+          color: "#9dedd1",
+        },
+        {
+          parentId: 1,
+          id: 5,
+          icone: "Initiation-cryptos-actifs.png",
+          title: "Conférences tout public",
+          detail: `Nous proposons des conférences en ligne Grand public pour Acculturer les particuliers, les équipes et les métiers aux impacts et avantages des blockchains et cryptoactifs.
+Ces conférences grand public vous permettront comprendre un projet lié aux cryptoactifs`,
+          color: "#ffc20b",
+        },
         {
           parentId: 2,
           id: 6,
@@ -148,15 +148,15 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
            assurer la bonne réalisation et l’implémentation de vos projets sur-mesure, de l’expression du besoin, à la réalisation du POC, la mise en production et la livraison de votre solution.`,
           color: "#9deff1",
         },
-        // {
-        //   parentId: 2,
-        //   id: 9,
-        //   icone: "history",
-        //   title: "Audits et diligences techniques et règlementaires",
-        //   detail: `Nous auditons vos projets ou vos solutions blockchain existantes, sur le plan technique, juridique 
-        //   et de gouvernance. Nos analyses sont suivies de recommandations en vue d’amélioration ou d’accompagnement dans le cadre d’un partenariat stratégique.`,
-        //   color: "#ffc20b",
-        // },
+        {
+          parentId: 2,
+          id: 9,
+          icone: "002-project.png",
+          title: "Audits et diligences techniques et règlementaires",
+          detail: `Nous auditons vos projets ou vos solutions blockchain existantes, sur le plan technique, juridique 
+          et de gouvernance. Nos analyses sont suivies de recommandations en vue d’amélioration ou d’accompagnement dans le cadre d’un partenariat stratégique.`,
+          color: "#ffc20b",
+        },
         {
           parentId: 3,
           id: 10,

@@ -39,7 +39,7 @@ export default {
           detail:
             "Les blockchains et les actifs numérique peuvent sembler difficiles à comprendre les pédagogiques, ou nous nous adaptons au niveau et au métier des participants pour faire comprendre simplement les enjeux, usages et fonctionnement des blockchains et cryptoactifs",
           color: "#4faaf0",
-          img: "004-conference.png",
+          img: "Conférences-et-formations.png",
         },
         {
           id: 2,
@@ -47,7 +47,7 @@ export default {
           detail:
             "Nous sommes une équipe d’experts qui vous accompagnent à chaque étape de vos projets blockchain.",
           color: "#fac54b",
-          img: "004-conference.png",
+          img: "Conférences-et-formations.png",
         },
         {
           id: 3,
@@ -55,7 +55,7 @@ export default {
           detail:
             "Nous vous proposons des services et formations pour comprendre l’utilité des actifs numériques partant de l’analyser du projets cryptos actifs à la détention et l’échange des cryptos-actifs",
           color: "#c39ded",
-          img: "004-conference.png",
+          img: "crypto-actifs.png",
         },
       ],
     };
