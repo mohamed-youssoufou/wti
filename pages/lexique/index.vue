@@ -1,96 +1,13 @@
 <template>
   <div id="home" class="index">
     <loader v-show="loading" />
-    <Particles
-      id="tsparticles"
-      :options="{
-        background: {
-          color: {
-            value: 'rgba(0, 0, 0, 0.0)',
-          },
-          opacity: {
-            value: '0.5',
-          },
-        },
-        fpsLimit: 60,
-        interactivity: {
-          detectsOn: 'canvas',
-          events: {
-            onClick: {
-              enable: true,
-              mode: 'push',
-            },
-            onHover: {
-              enable: true,
-              mode: 'repulse',
-            },
-            resize: true,
-          },
-          modes: {
-            bubble: {
-              distance: 400,
-              duration: 2,
-              opacity: 0.8,
-              size: 40,
-            },
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: '#ffffff',
-          },
-          links: {
-            color: '#ffffff',
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-          },
-          collisions: {
-            enable: false,
-          },
-          move: {
-            direction: 'none',
-            enable: true,
-            outMode: 'bounce',
-            random: false,
-            speed: 2,
-            straight: false,
-          },
-          number: {
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-            value: 80,
-          },
-          opacity: {
-            value: 0.5,
-          },
-          shape: {
-            type: 'circle',
-          },
-          size: {
-            random: true,
-            value: 5,
-          },
-        },
-        detectRetina: true,
-      }"
-    />
+    <Particles id="tsparticles" :options="options" />
     <div class="flou"></div>
     <header>
       <navBar class="nav-bar" />
     </header>
     <main role="main">
-      <section class="nos-lexique ">
+      <section class="nos-lexique">
         <nos-lexique />
       </section>
       <section class="footer">
@@ -116,6 +33,87 @@ export default {
     return {
       parentId: 1,
       loading: true,
+      options: {
+        background: {
+          color: {
+            value: "rgba(0, 0, 0, 0.0)",
+          },
+          opacity: {
+            value: "0.5",
+          },
+        },
+        fpsLimit: 60,
+        interactivity: {
+          detectsOn: "canvas",
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
+          },
+          modes: {
+            bubble: {
+              distance: 400,
+              duration: 2,
+              opacity: 0.8,
+              size: 40,
+            },
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: "#ffffff",
+          },
+          links: {
+            color: "#ffffff",
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: false,
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outMode: "bounce",
+            random: false,
+            speed: 2,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            random: true,
+            value: 5,
+          },
+        },
+        detectRetina: true,
+      },
     };
   },
   computed: {
@@ -148,12 +146,12 @@ export default {
 </script>
 
 <style scoped>
-.nos-lexique{
-    min-height: 100vh;
-    padding-top: 100px;
-    color: white;
-    position: relative;
-    z-index: 3;
+.nos-lexique {
+  min-height: 100vh;
+  padding-top: 100px;
+  color: white;
+  position: relative;
+  z-index: 3;
 }
 .flou {
   position: absolute;

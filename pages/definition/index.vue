@@ -1,9 +1,37 @@
 <template>
   <div id="home" class="index">
     <loader v-show="loading" />
-    <Particles
-      id="tsparticles"
-      :options="{
+    <!-- <Particles id="tsparticles" :options="options" /> -->
+    <div class="flou"></div>
+    <header>
+      <navBar class="nav-bar" />
+    </header>
+    <main role="main">
+      <section class="nos-lexique ">
+        <nos-definition />
+      </section>
+      <section class="footer">
+        <foot />
+      </section>
+    </main>
+    <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
+  </div>
+</template>
+
+<script>
+import Vue from "vue";
+import VueScrollTo from "vue-scrollto";
+
+
+export default {
+  mounted() {
+    setTimeout(() => this.finish(), 2000);
+  },
+  data() {
+    return {
+      parentId: 1,
+      loading: true,
+       options: {
         background: {
           color: {
             value: 'rgba(0, 0, 0, 0.0)',
@@ -83,36 +111,7 @@
           },
         },
         detectRetina: true,
-      }"
-    />
-    <div class="flou"></div>
-    <header>
-      <navBar class="nav-bar" />
-    </header>
-    <main role="main">
-      <section class="nos-lexique ">
-        <nos-definition />
-      </section>
-      <section class="footer">
-        <foot />
-      </section>
-    </main>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  </div>
-</template>
-
-<script>
-import Vue from "vue";
-import VueScrollTo from "vue-scrollto";
-
-export default {
-  mounted() {
-    setTimeout(() => this.finish(), 2000);
-  },
-  data() {
-    return {
-      parentId: 1,
-      loading: true,
+      }
     };
   },
   computed: {

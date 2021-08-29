@@ -1,28 +1,55 @@
 <template>
   <div id="home" class="index">
     <loader v-if="loading" />
-    <Particles
-      id="tsparticles"
-      :options="{
+    <!-- <Particles id="tsparticles" :options="options" /> -->
+    <div class="flou"></div>
+    <header>
+      <navBar class="nav-bar" />
+    </header>
+    <main role="main">
+      <section class="nos-lexique">
+        <nos-cas-d-application />
+      </section>
+      <section class="footer">
+        <foot />
+      </section>
+    </main>
+    <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
+  </div>
+</template>
+
+<script>
+import Vue from "vue";
+import VueScrollTo from "vue-scrollto";
+
+export default {
+  mounted() {
+    setTimeout(() => this.finish(), 2000);
+  },
+  data() {
+    return {
+      parentId: 1,
+      loading: true,
+      options: {
         background: {
           color: {
-            value: 'rgba(0, 0, 0, 0.0)',
+            value: "rgba(0, 0, 0, 0.0)",
           },
           opacity: {
-            value: '0.5',
+            value: "0.5",
           },
         },
         fpsLimit: 60,
         interactivity: {
-          detectsOn: 'canvas',
+          detectsOn: "canvas",
           events: {
             onClick: {
               enable: true,
-              mode: 'push',
+              mode: "push",
             },
             onHover: {
               enable: true,
-              mode: 'repulse',
+              mode: "repulse",
             },
             resize: true,
           },
@@ -44,10 +71,10 @@
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: "#ffffff",
           },
           links: {
-            color: '#ffffff',
+            color: "#ffffff",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -57,9 +84,9 @@
             enable: false,
           },
           move: {
-            direction: 'none',
+            direction: "none",
             enable: true,
-            outMode: 'bounce',
+            outMode: "bounce",
             random: false,
             speed: 2,
             straight: false,
@@ -75,7 +102,7 @@
             value: 0.5,
           },
           shape: {
-            type: 'circle',
+            type: "circle",
           },
           size: {
             random: true,
@@ -83,36 +110,7 @@
           },
         },
         detectRetina: true,
-      }"
-    />
-    <div class="flou"></div>
-    <header>
-      <navBar class="nav-bar" />
-    </header>
-    <main role="main">
-      <section class="nos-lexique ">
-        <nos-cas-d-application />
-      </section>
-      <section class="footer">
-        <foot />
-      </section>
-    </main>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  </div>
-</template>
-
-<script>
-import Vue from "vue";
-import VueScrollTo from "vue-scrollto";
-
-export default {
-  mounted() {
-    setTimeout(() => this.finish(), 2000);
-  },
-  data() {
-    return {
-      parentId: 1,
-      loading: true,
+      },
     };
   },
   computed: {
@@ -145,12 +143,12 @@ export default {
 </script>
 
 <style scoped>
-.nos-lexique{
-    min-height: 100vh;
-    padding-top: 100px;
-    color: white;
-    position: relative;
-    z-index: 3;
+.nos-lexique {
+  min-height: 100vh;
+  padding-top: 100px;
+  color: white;
+  position: relative;
+  z-index: 3;
 }
 .flou {
   position: absolute;
