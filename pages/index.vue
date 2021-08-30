@@ -1,7 +1,6 @@
 <template>
   <div id="home" class="index">
-    <loader v-show="loading" />
-    <!-- <Particles /> -->
+    <loader v-if="loading" />
     <Particles
       id="tsparticles"
       :options="particleOptions"
@@ -61,7 +60,7 @@
 
 <script>
 import Vue from "vue";
-import VueScrollTo from "vue-scrollto";
+// import VueScrollTo from "vue-scrollto";
 import contactezNous from "../components/contactez-nous.vue";
 
 // Vue.use(VueScrollTo)
@@ -77,7 +76,10 @@ export default {
   //   }
   // },
   mounted() {
-    setTimeout(() => this.finish(), 2000);
+    // setTimeout(() => this.finish(), 2000);
+    this.$nextTick(function () {
+      this.finish()
+    })
   },
   data() {
     return {
@@ -166,22 +168,13 @@ export default {
       }
     };
   },
-  computed: {
-    change() {
-      this.loading = false;
-    },
-  },
+  // computed: {
+  //   change() {
+  //     this.loading = false;
+  //   },
+  // },
   methods: {
-    // gtag() {
-    //   dataLayer.push(arguments);
-    // },
-    // loadScript() {
-    //   window.dataLayer = window.dataLayer || [];
-
-    //   this.gtag("js", new Date());
-
-    //   this.gtag("config", "G-7LPSCGVLHZ");
-    // },
+    
     start() {
       this.loading = true;
     },

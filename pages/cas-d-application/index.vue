@@ -24,7 +24,10 @@ import VueScrollTo from "vue-scrollto";
 
 export default {
   mounted() {
-    setTimeout(() => this.finish(), 2000);
+    // setTimeout(() => this.finish(), 2000);
+    this.$nextTick(function () {
+      this.finish();
+    });
   },
   data() {
     return {

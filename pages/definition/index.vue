@@ -1,13 +1,13 @@
 <template>
   <div id="home" class="index">
-    <loader v-show="loading" />
-    <!-- <Particles id="tsparticles" :options="options" /> -->
+    <loader v-if="loading" />
+    <Particles id="tsparticles" :options="options" />
     <div class="flou"></div>
     <header>
       <navBar class="nav-bar" />
     </header>
     <main role="main">
-      <section class="nos-lexique ">
+      <section class="nos-lexique">
         <nos-definition />
       </section>
       <section class="footer">
@@ -22,35 +22,37 @@
 import Vue from "vue";
 import VueScrollTo from "vue-scrollto";
 
-
 export default {
   mounted() {
-    setTimeout(() => this.finish(), 2000);
+    // setTimeout(() => this.finish(), 2000);
+    this.$nextTick(function () {
+      this.finish();
+    });
   },
   data() {
     return {
       parentId: 1,
       loading: true,
-       options: {
+      options: {
         background: {
           color: {
-            value: 'rgba(0, 0, 0, 0.0)',
+            value: "rgba(0, 0, 0, 0.0)",
           },
           opacity: {
-            value: '0.5',
+            value: "0.5",
           },
         },
         fpsLimit: 60,
         interactivity: {
-          detectsOn: 'canvas',
+          detectsOn: "canvas",
           events: {
             onClick: {
               enable: true,
-              mode: 'push',
+              mode: "push",
             },
             onHover: {
               enable: true,
-              mode: 'repulse',
+              mode: "repulse",
             },
             resize: true,
           },
@@ -72,10 +74,10 @@ export default {
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: "#ffffff",
           },
           links: {
-            color: '#ffffff',
+            color: "#ffffff",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -85,9 +87,9 @@ export default {
             enable: false,
           },
           move: {
-            direction: 'none',
+            direction: "none",
             enable: true,
-            outMode: 'bounce',
+            outMode: "bounce",
             random: false,
             speed: 2,
             straight: false,
@@ -103,7 +105,7 @@ export default {
             value: 0.5,
           },
           shape: {
-            type: 'circle',
+            type: "circle",
           },
           size: {
             random: true,
@@ -111,7 +113,7 @@ export default {
           },
         },
         detectRetina: true,
-      }
+      },
     };
   },
   computed: {
@@ -144,12 +146,12 @@ export default {
 </script>
 
 <style scoped>
-.nos-lexique{
-    min-height: 100vh;
-    padding-top: 100px;
-    color: white;
-    position: relative;
-    z-index: 3;
+.nos-lexique {
+  min-height: 100vh;
+  padding-top: 100px;
+  color: white;
+  position: relative;
+  z-index: 3;
 }
 .flou {
   position: absolute;

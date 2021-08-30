@@ -27,7 +27,10 @@ import NosLexique from "../../components/nos-lexique.vue";
 export default {
   components: { contactezNous, NosLexique },
   mounted() {
-    setTimeout(() => this.finish(), 2000);
+    // setTimeout(() => this.finish(), 2000);
+    this.$nextTick(function () {
+      this.finish();
+    });
   },
   data() {
     return {
