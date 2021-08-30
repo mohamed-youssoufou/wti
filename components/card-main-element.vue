@@ -78,10 +78,10 @@ export default {
 .detail {
   font-family: fsl;
   height: 110px;
+  font-size: 26px;
 }
 .card-title {
   font-family: fsl;
-  font-weight: 600;
   font-size: 26px;
   color: #ffffff;
 }

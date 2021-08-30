@@ -182,7 +182,7 @@ export default {};
 .footer {
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
-  font-weight: 500;
+  font-family: fsl;
 }
 
 .wrapper_second_useful ul {

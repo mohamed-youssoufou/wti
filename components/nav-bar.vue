@@ -88,7 +88,7 @@
           </b-nav-item-dropdown>
           <b-nav-item href="#" v-scroll-to="'#contactez_nous'">
             <NuxtLink class="nav-link p-0" to="/#contactez_nous"
-              >contactez-nous</NuxtLink
+              >Contactez-nous</NuxtLink
             ></b-nav-item
           >
         </b-navbar-nav>

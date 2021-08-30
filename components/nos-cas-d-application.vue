@@ -23,9 +23,9 @@
         technologie dans votre organisation vous permettra sûrement d'accélérer
         votre développement. C'est pourquoi nous vous proposons de découvrir de
         quelle façon implémenter la blockchain dans votre secteur d'activité. La
-        Blockchain a passé le cap de l'évangélisation. Il n'est plus nécessaire
+        blockchain a passé le cap de l'évangélisation. Il n'est plus nécessaire
         de rappeler l'intérêt que représente cette technologie. Les cas d'usage
-        sont infinis et nombre d'entreprises sont passées du stade de PoC (proof
+        sont infinis et nombre d'entreprises sont passées du stade de POC (proof
         of concept) aux réalisations bien concrètes. Quelques exemples : <br />
 
         <ul>
@@ -81,7 +81,7 @@ export default {
           id: 1,
           title: "Sport",
           detail: `Sportifs professionnel, Equipes, Fédérations`,
-          img: "Blockchain-sport-Wealthtech.png",
+          img: "Blockchain-sport-wealthtech.gif",
         },
         {
           id: 2,
@@ -94,7 +94,7 @@ export default {
             Acteurs,
             Art numérique
                     `,
-          img: "blockchain-culture.png",
+          img: "Blockchain-culture-wealthtech.gif",
         },
         {
           id: 3,
@@ -106,7 +106,7 @@ export default {
                   Dossier médicale,
                   Ordre des pharmaciens
                   `,
-          img: "Blockchain-santé.png",
+          img: "Blockchain-santé-wealthtech.gif",
         },
         {
           id: 4,
@@ -117,7 +117,7 @@ export default {
                   Marché public,
                   Elections
                     `,
-          img: "blockchain-Administration-wealthtech.png",
+          img: "blockchain-administration-Wealthtech.gif",
         },
         {
           id: 5,
@@ -127,7 +127,7 @@ export default {
                   Conformité des cultures,
                   Production
           `,
-          img: "blockchain-agriculture-Agro-industrie.png",
+          img: "Blockchain-agro-industrie-wealthtech.gif",
         },
         {
           id: 6,
@@ -138,7 +138,7 @@ export default {
                   Universités
                   Collèges et lycées
                   `,
-          img: "blockchain-education.png",
+          img: "Blockchain-éducation-wealthtech.gif",
         },
         // {
         //   id: 8,
@@ -150,14 +150,14 @@ export default {
         //           Géomètres,
         //           Huissiers justice
         //             `,
-        //   img: "block-santé.png",
+        //   img: "block-santé.gif",
         // },
         {
           id: 9,
           title: "Hôtellerie",
           detail: `
                     `,
-          img: "blockchain-hôtellerie.png",
+          img: "Blockchain-hôtellerie-wealthtech.gif",
         },
         {
           id: 10,
@@ -165,7 +165,7 @@ export default {
           detail: `
 
                     `,
-          img: "blockchain-assurance-wealthtech.png",
+          img: "Blockchain-assurance-wealthtech.gif",
         },
         {
           id: 11,
@@ -173,7 +173,7 @@ export default {
           detail: `
 
                     `,
-          img: "blockchain-média.png",
+          img: "Blockchain-media-wealthtech.gif",
         },
         {
           id: 12,
@@ -181,7 +181,7 @@ export default {
           detail: `
 
                     `,
-          img: "blockchain-Banque-et-finance.png",
+          img: "Blockchain-banque-et-finance-wealthtech.gif",
         },
         {
           id: 12,
@@ -189,7 +189,7 @@ export default {
           detail: `
 
                     `,
-          img: "Blockchain-supply-chain.png",
+          img: "Blockchain-supply-chain-wealthtech.gif",
         },
       ],
     };

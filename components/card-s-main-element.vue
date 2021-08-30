@@ -63,7 +63,6 @@ export default {
 <style scoped>
 .card-title {
   font-family: fsl;
-  font-weight: 600;
   font-size: 26px;
   color: #ffffff;
 }
@@ -78,6 +77,7 @@ export default {
   color: #ffffff;
   font-family: fsl;
   font-size: 18px;
+  line-height: 27px;
 }
 .plus {
   font-family: fsl;

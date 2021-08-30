@@ -82,7 +82,7 @@ export default {
           title: "Formations techniques",
           icone: "Formations-techniques.png",
           detail:
-            "Pour les developpeurs, Nous proposons des formations techniques qui leur permettront de concevoir des architectures Blockchains spécifiques et adaptées au domaine d’activité.",
+            "Pour les développeurs, nous proposons des formations techniques qui leur permettront de concevoir des architectures blockchains spécifiques et adaptées au domaine d’activité.",
           color: "",
         },
         {
@@ -98,9 +98,9 @@ export default {
           parentId: 1,
           id: 3,
           icone: "Intervention-métiers-réglementées.png",
-          title: "Interventions Métiers réglementés",
+          title: "Interventions métiers réglementés",
           detail:
-            "Nous intervenons auprès des professionnels métier (professions règlements) dans l’optique de proposer des solutions basées sur les blockchains et cryptoactifs : « Spécific use cases ».",
+            "Nous intervenons auprès des professions règlementées dans l’optique de proposer des solutions basées sur les blockchains et actifs numériques : « specific use cases ».",
           color: "",
         },
         {
@@ -109,7 +109,7 @@ export default {
           icone: "Start-operations-icon.png",
           title: "Interventions Institutions publiques et privée",
           detail:
-            "Nous intervenons auprès des institutions publiques et privée en tant que consultants ou formateurs afin de donner une vision stratégique de l’utilité des blockchains et cryptoactifs. Notre intervention peut s’étendre à la réflexion ou la réalisation de projet concrets",
+            "Nous intervenons auprès des institutions publiques et privées en tant que consultants ou formateurs afin de donner une vision stratégique de l’utilité des blockchains et cryptoactifs. Notre intervention peut s’étendre à la réflexion ou la réalisation de projet concrets.",
           color: "#9dedd1",
         },
         {
@@ -117,8 +117,8 @@ export default {
           id: 5,
           icone: "Initiation-cryptos-actifs.png",
           title: "Conférences tout public",
-          detail: `Nous proposons des conférences en ligne Grand public pour Acculturer les particuliers, les équipes et les métiers aux impacts et avantages des blockchains et cryptoactifs.
-Ces conférences grand public vous permettront comprendre un projet lié aux cryptoactifs`,
+          detail: `Nous proposons des conférences en ligne grand public pour acculturer les particuliers, les équipes et les métiers aux impacts et avantages des blockchains et cryptoactifs.
+Ces conférences grand public vous permettront de comprendre un projet lié aux cryptoactifs.`,
           color: "#ffc20b",
         },
         {
@@ -127,7 +127,7 @@ Ces conférences grand public vous permettront comprendre un projet lié aux cry
           icone: "Consulting-et-études.png",
           title: "Consulting : Etudes et conseils stratégiques",
           detail: `Exploration des cas d’usage, études, analyse.
-Nos expertises sont au service de vos idées et de votre entreprise pour vous permettre d'imaginer de nouveaux services et d'assurer une implémentation réussie de la blockchain dans votre activité`,
+Nos expertises sont au service de vos idées et de votre entreprise pour vous permettre d'imaginer de nouveaux services et d'assurer une implémentation réussie de la blockchain dans votre activité.`,
           color: "#ff0099",
         },
         {
@@ -136,7 +136,7 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
           icone: "Analyse-et-optimisation.png",
           title: "Analyse et optimisation des projets",
           detail: `Nous étudions en détail votre projet et vous proposons des plans fonctionnels et techniques.
-           Nous analysons votre projet afin de réduire les risques, les coûts associés et garantir une utilisation optimale de votre blockchain`,
+           Nous analysons votre projet afin de réduire les risques, les coûts associés et garantir une utilisation optimale de votre blockchain.`,
           color: "#00000",
         },
         {
@@ -145,7 +145,7 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
           icone: "Développement-et-implementation-sur-mesure.png",
           title: "Développement et implémentation de solutions sur-mesure",
           detail: `Notre équipe de developpeurs et de consultants « métiers » met tout en œuvre pour
-           assurer la bonne réalisation et l’implémentation de vos projets sur-mesure, de l’expression du besoin, à la réalisation du POC, la mise en production et la livraison de votre solution.`,
+           assurer la bonne réalisation et l’implémentation de vos projets sur-mesure, de l’expression du besoin à la réalisation du POC, la mise en production et la livraison de votre solution.`,
           color: "#9deff1",
         },
         {
@@ -154,7 +154,7 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
           icone: "002-project.png",
           title: "Audits et diligences techniques et règlementaires",
           detail: `Nous auditons vos projets ou vos solutions blockchain existantes, sur le plan technique, juridique 
-          et de gouvernance. Nos analyses sont suivies de recommandations en vue d’amélioration ou d’accompagnement dans le cadre d’un partenariat stratégique.`,
+          et de gouvernance. Nos analyses sont suivies de recommandations en vue d’une amélioration ou d’un accompagnement dans le cadre d’un partenariat stratégique.`,
           color: "#ffc20b",
         },
         {
@@ -178,10 +178,8 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
           parentId: 3,
           id: 12,
           icone: "Création-de-jeton.png",
-          title: "Création de jetons (actifs)",
-          detail: `Nous vous accompagnons dans votre projet de création de jeton fongible ( cryptomonnaie) , et de jeton non fongible (NFT).
-De l'idée, à la conception des jetons, la constitution des galléries, le choix de plateformes, le développement, la communication. 
-De plus nous prenons en charge le lancement des processus ICO, IEO, FTO, INO`,
+          title: "Création d’actifs numériques",
+          detail: `Nous vous accompagnons dans votre projet de création de jetons fongibles « cryptomonnaies » et de jetons non fongibles « NFT ». De l’idée à la conception des jetons, à la constitution des galeries d’art numérique. Nous vous aidons dans le choix de la plateforme de développement et dans la stratégie de communication. De plus, nous prenons en charge le lancement des processus ICO, IEO, FTO, INO.`,
           color: "#9deff1",
         },
       ],

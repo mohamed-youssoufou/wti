@@ -103,10 +103,10 @@ export default {
         ]
       }
     ],
-    ['nuxt-gmaps', {
-      key: 'AIzaSyCMo6DieI9jDuutybzKEPrzmQ4_Nr2hTng',
-      //you can use libraries: ['places']
-    }],
+    // ['nuxt-gmaps', {
+    //   key: 'AIzaSyCMo6DieI9jDuutybzKEPrzmQ4_Nr2hTng',
+    //   //you can use libraries: ['places']
+    // }],
     '@nuxtjs/axios',
     ['nuxt-mail', {
       message: {

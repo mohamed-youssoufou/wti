@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title"><img src="~/assets/img/nos-services.png" height="160px" /></h2>
+      <h2 class="col-md-12 title">
+        <img src="~/assets/img/title/nos-services-wealthtech.gif" height="300px" />
+      </h2>
       <p class="col-md-12 btn-body-text">
         Wealthtech Innovations accompagne les particuliers, les associations,
         les organisations, les institutions dans la découverte, l’exploration et
@@ -36,8 +38,8 @@ export default {
         {
           id: 1,
           title: "Conférences et formations blockchain",
-          detail:
-            "Les blockchains et les actifs numérique peuvent sembler difficiles à comprendre les pédagogiques, ou nous nous adaptons au niveau et au métier des participants pour faire comprendre simplement les enjeux, usages et fonctionnement des blockchains et cryptoactifs",
+          detail: `Les blockchains et les actifs numériques peuvent sembler difficiles à comprendre. C’est la raison pour laquelle nous proposons des interventions pédagogiques sur mesure, adaptées au niveau et au métier des participants. 
+Ces interventions permettent de faire comprendre simplement les enjeux, les usages et le fonctionnement des blockchains et des actifs numériques.`,
           color: "#4faaf0",
           img: "Conférences-et-formations.png",
         },
@@ -45,15 +47,15 @@ export default {
           id: 2,
           title: "Conseils et développement",
           detail:
-            "Nous sommes une équipe d’experts qui vous accompagnent à chaque étape de vos projets blockchain.",
+            "Notre équipe d’experts vous accompagne à chaque étape de vos projets blockchain.",
           color: "#fac54b",
           img: "Conférences-et-formations.png",
         },
         {
           id: 3,
-          title: "Crypto-actifs",
+          title: "Actifs numériques",
           detail:
-            "Nous vous proposons des services et formations pour comprendre l’utilité des actifs numériques partant de l’analyser du projets cryptos actifs à la détention et l’échange des cryptos-actifs",
+            "Nous vous proposons des services et formations pour comprendre l’utilité des actifs numériques, partant de l’analyse des projets listés à la détention et l’échange des actifs numériques.",
           color: "#c39ded",
           img: "crypto-actifs.png",
         },

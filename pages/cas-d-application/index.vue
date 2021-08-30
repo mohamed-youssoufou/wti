@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="index">
     <loader v-if="loading" />
-    <!-- <Particles id="tsparticles" :options="options" /> -->
+    <Particles id="tsparticles" :options="options" />
     <div class="flou"></div>
     <header>
       <navBar class="nav-bar" />

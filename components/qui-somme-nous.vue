@@ -1,18 +1,22 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title"><h4 class="col-md-12 title"><img src="~/assets/img/qui-somme-nous.png" height="160px" /></h4></h2>
+      <h2 class="col-md-12 title"><h4 class="col-md-12 title"><img src="~/assets/img/title/qui-sommes.gif" height="300px" /></h4></h2>
       <div class="col-md-12">
         <p class="btn-body-text">
           Wealthtech innovations est une start-up spécialisée dans le
         développement technique d’applications blockchain et dans la promotion
-        d’une nouvelle économie numérique.<br/> Nous avons pour objectif d’être
-        un des leaders africains de l'accompagnement stratégique et technique
-        sur les technologies blockchain et dans le conseil sur les actifs numériques
-        (Crypto-actifs).<br/> Suite au constat d’absence d’informations et de
+        d’une nouvelle économie numérique.<br/> 
+        Nous avons pour objectif d’être un des leaders africains de l'accompagnement stratégique et technique sur :
+        <ul>
+          <li>Les technologies blockchain</li>
+          <li>Les actifs numériques (Crypto-actifs)</li>
+        </ul>
+        Suite au constat d’absence d’informations et de
         formations sur le sujet de la blockchain en Afrique, nous avons décidé de
         mettre en place une structure pour promouvoir cette nouvelle technologie
-        et les avantages liés à son implémentation.<br/>Nous avons notamment mis
+        et les avantages liés à son implémentation.<br/>
+        Nous avons notamment mis
         en place des partenariats avec des universités et des
         associations dans l'optique d'informer, de former et de concevoir des
         projets en ce sens.
