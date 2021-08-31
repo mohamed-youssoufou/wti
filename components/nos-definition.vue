@@ -49,6 +49,9 @@ export default {
 .heightLight {
   color: #2a80b9;
 }
+.container {
+  font-family: fsl;
+}
 @media screen and (max-width: 540px) {
   .title > img{
    width: 100%;

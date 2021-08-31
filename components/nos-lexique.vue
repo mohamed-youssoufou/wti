@@ -405,7 +405,9 @@ export default {
 .panel[aria-expanded="true"]::after {
    content: "▼";
 } */
-
+.container{
+  font-family: fsl;
+}
 button[data-toggle="collapse"]::after {
   content: "▼";
   color: rgb(255, 255, 255);

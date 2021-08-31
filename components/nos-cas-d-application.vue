@@ -16,7 +16,7 @@
       </VueSlickCarousel>
     </div>
     <div class="row">
-      <p class="col-md-12 mt-4 text-left">
+      <p class="col-md-12 mt-4 text-left body">
         La Blockchain vous permet de simplifier la tenue des dossiers et de
         rationaliser les flux de travail partagés. L'implémentation de cette
         technologie dans votre organisation vous permettra sûrement d'accélérer
@@ -210,7 +210,7 @@ export default {
 
 .title {
   font-family: fsl;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   color: white;
 }
 .cover-trios a.trio-cover {
@@ -226,6 +226,9 @@ export default {
 }
 a {
   color: royalblue;
+}
+.body{
+  font-family: fsl;
 }
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {

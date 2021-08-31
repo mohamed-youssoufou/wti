@@ -20,6 +20,7 @@ export default {
     //   async: true,
     // },
     script: [
+
       {
         src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
         type: "text/javascript"
@@ -27,6 +28,10 @@ export default {
       {
         src:
           "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+        type: "text/javascript"
+      },
+      {
+        src: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js",
         type: "text/javascript"
       },
       {
@@ -123,10 +128,10 @@ export default {
     }],
   ],
 
-  server: {     
+  server: {
     port: 8000, // default: 3000     
     host: '0.0.0.0', // default: localhost   
-  }, 
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

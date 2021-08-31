@@ -162,6 +162,7 @@ export default {
 <style scoped>
 .write-us {
   text-align: center;
+  font-family: fsl;
 }
 
 .title {
@@ -169,7 +170,7 @@ export default {
   margin-bottom: 2rem;
   margin-left: 0;
   opacity: 1;
-  font-family: Spacegrotesk, sans-serif;
+  font-family: fsl;
   color: #ffffff;
   font-size: 70px;
   line-height: 1.2em;
