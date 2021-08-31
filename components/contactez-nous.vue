@@ -135,7 +135,7 @@ export default {
 
       if (!this.errors.length) {
         try {
-          const response = this.$axios.$post("/mail/send",{
+          const response = await this.$axios.$post("/mail/send",{
             from: this.email,
             subject: "DEPUIS LE SITE WEB: " + this.checkedName.join(", "),
             text: this.content,
@@ -143,11 +143,15 @@ export default {
           this.email = "";
           this.checkedName = [];
           this.content = "";
+          this.loader = false;
         } catch (error) {
           // console.log(error);
+          this.loader = false;
         }
+      }else{
+        this.loader = false;
       }
-      this.loader = false;
+      
       e.preventDefault();
     },
     validEmail: function (email) {
