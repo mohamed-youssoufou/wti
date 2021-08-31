@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title text-center"><img src="~/assets/img/title/nos-convictions-wealthtech.gif" height="300px" /></h2>
+      <h2 class="col-md-12 title text-center"><img src="~/assets/img/title/nos-convictions-wealthtech.gif" height="300px" width="100%" /></h2>
       <div class="col-md-12">
         <p class="btn-body-text">
           À l'aube de la révolution numérique impulsée par le développement et l’implémentation des nouvelles technologies, nous sommes convaincus que les actifs numériques, le WEB3 et les blockchains apportent des solutions durables qui répondent à plusieurs grands enjeux actuels.

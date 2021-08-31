@@ -8,7 +8,7 @@
       <VueSlickCarousel v-bind="settings">
         <casapp
           v-for="service in domaines"
-          :key="service.id"
+          :key="service.id" 
           :title="service.title"
           :detail="service.detail"
           :icone="service.img"
@@ -63,7 +63,7 @@ export default {
         arrows: true,
         responsive: [
           {
-            breakpoint: 376,
+            breakpoint: 414,
             settings: {
               slidesToShow: 1,
             },
@@ -197,10 +197,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 .slick-list {
   height: 100%;
 }
+
 .nos-cas {
   min-height: 100vh;
 }
@@ -236,6 +237,10 @@ a {
   border: 0px solid white !important;
   font-family: tahoma;
 }
-.slick-arrow {
+@media screen and (max-width: 540px) {
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    display: none !important;
+  }
 }
 </style>

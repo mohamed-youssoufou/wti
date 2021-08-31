@@ -299,4 +299,19 @@ svg:not(:root) {
 .instagram {
   color: #8a3ab9;
 }
+@media screen and (max-width: 540px) {
+  .ft_abt_text_wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper_second_useful>h4{
+    text-align: center;
+  }
+  .wrapper_second_useful.wrapper_second_useful_2>h4{
+    text-align: center;
+  }
+  ul>li{
+    text-align: center;
+  }
+}
 </style>

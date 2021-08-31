@@ -168,7 +168,7 @@ header {
 }
 html,
 body {
-  width: 100%;
+  width: 100vh;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 main {

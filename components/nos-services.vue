@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <h2 class="col-md-12 title">
-        <img src="~/assets/img/title/nos-services-wealthtech.gif" height="300px" />
+        <img src="~/assets/img/title/nos-services-wealthtech.gif" height="300px" width="100%" />
       </h2>
       <p class="col-md-12 btn-body-text">
         Wealthtech Innovations accompagne les particuliers, les associations,

@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row m-0">
       <div class="col-md-12 text-center">
-        <h2 class="col-md-12 title text-center"><img src="~/assets/img/title/blockchain.gif" height="300px" /></h2>
+        <h2 class="col-md-12 title text-center"><img src="~/assets/img/title/blockchain.gif" height="300px" width="100%" /></h2>
       </div>
       <h2 class="col-md-12 text-center">Qu’est-ce que la Blockchain ?</h2>
       <p class="col-md-12 text-justify"><br/>

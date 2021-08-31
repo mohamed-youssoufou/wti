@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="row">
-      <h2 class="col-md-12 title"><h4 class="col-md-12 title"><img src="~/assets/img/title/qui-sommes.gif" height="300px" /></h4></h2>
+    <div class="row m-0">
+      <h2 class="col-md-12 title"><h4 class="col-md-12 title"><img src="~/assets/img/title/qui-sommes.gif" height="300px" width="100%" /></h4></h2>
       <div class="col-md-12">
         <p class="btn-body-text">
           Wealthtech innovations est une start-up spécialisée dans le

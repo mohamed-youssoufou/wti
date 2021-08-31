@@ -1,6 +1,6 @@
 html, body {
     width: 100%;
-    background-color:rgba(0, 0, 0, .0);
+    background-color: rgba(0, 0, 0, .0);
 }
 
 @font-face {
@@ -21,4 +21,10 @@ html, body {
 @font-face {
     font-family: SpaceGrotesk;
     src: url('~assets/fonts/SpaceGrotesk-Bold.otf');
+}
+
+@media screen and (max-width: 540px) {
+    .btn-body-text {
+        padding: 10px;
+    }
 }

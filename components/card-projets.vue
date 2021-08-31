@@ -125,4 +125,9 @@ export default {
 .link-to {
   color: #515cf5;
 }
+@media screen and (max-width: 540px) {
+  .detail>p{
+    width: 100% !important;
+  }
+}
 </style>

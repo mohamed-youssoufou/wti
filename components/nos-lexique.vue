@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row m-0">
       <h2 class="col-md-12 d-flex title">
-        <div class="w-50">Le lexique de la blockchain</div>
-        <div class="w-50">
+        <div class="w-50 elt">Le lexique de la blockchain</div>
+        <div class="w-50 elt">
           <input
             type="text"
             v-model="search_field"
@@ -23,7 +23,7 @@
               <h5 class="mb-0">
                 <button
                   class="btn btn-link panel"
-                  style="color: white;"
+                  style="color: white"
                   data-toggle="collapse"
                   :data-target="'#collapse' + lexique.id"
                   aria-expanded="true"
@@ -31,7 +31,6 @@
                 >
                   {{ lexique.title }}
                 </button>
-              
               </h5>
             </div>
 
@@ -406,7 +405,8 @@ export default {
 .panel[aria-expanded="true"]::after {
    content: "▼";
 } */
-button[data-toggle="collapse"]::after{   
+
+button[data-toggle="collapse"]::after {
   content: "▼";
   color: rgb(255, 255, 255);
   top: -2px;
@@ -416,6 +416,20 @@ button[data-toggle="collapse"]::after{
 
 button[data-toggle="collapse"].collapsed::after {
   content: "▲";
-  
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .title > .elt:nth-child(1){
+    margin-bottom: 5px;
+  }
+  .title > .elt{
+    width: 100% !important;
+    text-align: center;
+  }
 }
 </style>

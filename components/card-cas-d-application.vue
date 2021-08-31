@@ -2,12 +2,9 @@
   <div class="p-2 h-100 card-main-element" style="cursor: pointer">
     <div class="row">
       <div class="col-md-12">
-        <div
-          class="img"
-          :style="{
-            backgroundImage: 'url(' + require(`~/assets/img/cas_applications/${icone}`) + ')',
-          }"
-        ></div>
+        <div>
+          <img class="img" :src="require(`~/assets/img/cas_applications/${icone}`)" />
+        </div>
       </div>
     </div>
     <div class="">
@@ -101,6 +98,7 @@ export default {
   background-size: cover;
   height: 200px;
   border-radius: 10px;
+  width: 100%;
 }
 .card-text {
   color: #ffffff;
@@ -110,5 +108,6 @@ export default {
 .link-to {
   color: #515cf5;
 }
+
 
 </style>

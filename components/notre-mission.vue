@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <h4 class="col-md-12 title"><img src="~/assets/img/title/notre-mission-wealthtech.gif" height="300px" /></h4>
+      <h4 class="col-md-12 title"><img src="~/assets/img/title/notre-mission-wealthtech.gif" height="300px" width="100%" /></h4>
       <p class="col-md-12 btn-body-text">
         Notre mission est de contribuer activement au développement de
         l’économie numérique en apportant aux entreprises, aux institutions et

@@ -1,10 +1,7 @@
 <template>
-  <div id="home" class="index">
+  <div id="home w-100" class="index">
     <loader v-if="loading" />
-    <Particles
-      id="tsparticles"
-      :options="particleOptions"
-    />
+    <!-- <Particles id="tsparticles" :options="particleOptions" /> -->
     <div class="flou"></div>
     <header>
       <navBar @myEvent="pushToSousService" class="nav-bar" />
@@ -23,21 +20,26 @@
       >
         <qui-somme-nous />
       </section>
-      <section id="nos-services" class="mt-4 qui-some-nous d-flex flex-column justify-content-center">
-        <nos-services
-          @myEvent="pushToSousService"
-          class="nos-services"
-        />
+      <section
+        id="nos-services"
+        class="mt-4 qui-some-nous d-flex flex-column justify-content-center"
+      >
+        <nos-services @myEvent="pushToSousService" class="nos-services" />
       </section>
       <section id="element" class="sous-services mt-4">
-        <sous-services  :parentId="parentId" />
+        <sous-services :parentId="parentId" />
       </section>
-      <section id="nos_convictions" class="nos-convictions ">
-        <div class="w-100 s-convictions d-flex flex-column justify-content-center">
+      <section id="nos_convictions" class="nos-convictions">
+        <div
+          class="w-100 s-convictions d-flex flex-column justify-content-center"
+        >
           <nos-convictions />
         </div>
       </section>
-      <section id="nos_projets" class="nos-projets d-flex flex-column justify-content-center">
+      <section
+        id="nos_projets"
+        class="nos-projets d-flex flex-column justify-content-center"
+      >
         <nos-projets />
       </section>
       <!-- <section class="google-map d-flex flex-column justify-content-center">
@@ -59,27 +61,13 @@
 </template>
 
 <script>
-import Vue from "vue";
-// import VueScrollTo from "vue-scrollto";
 import contactezNous from "../components/contactez-nous.vue";
-
-// Vue.use(VueScrollTo)
-
-// Vue.use(VueScrollTo, );
-
 export default {
   components: { contactezNous },
-  // created(){
-  //   if (process.browser) {
-  //     // let googleTag = document.createElement('script')
-
-  //   }
-  // },
   mounted() {
-    // setTimeout(() => this.finish(), 2000);
     this.$nextTick(function () {
-      this.finish()
-    })
+      this.finish();
+    });
   },
   data() {
     return {
@@ -88,23 +76,23 @@ export default {
       particleOptions: {
         background: {
           color: {
-            value: 'rgba(0, 0, 0, 0.0)',
+            value: "rgba(0, 0, 0, 0.0)",
           },
           opacity: {
-            value: '0.5',
+            value: "0.5",
           },
         },
         fpsLimit: 60,
         interactivity: {
-          detectsOn: 'canvas',
+          detectsOn: "canvas",
           events: {
             onClick: {
               enable: true,
-              mode: 'push',
+              mode: "push",
             },
             onHover: {
               enable: true,
-              mode: 'repulse',
+              mode: "repulse",
             },
             resize: true,
           },
@@ -126,10 +114,10 @@ export default {
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: "#ffffff",
           },
           links: {
-            color: '#ffffff',
+            color: "#ffffff",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -139,9 +127,9 @@ export default {
             enable: false,
           },
           move: {
-            direction: 'none',
+            direction: "none",
             enable: true,
-            outMode: 'bounce',
+            outMode: "bounce",
             random: false,
             speed: 2,
             straight: false,
@@ -157,7 +145,7 @@ export default {
             value: 0.5,
           },
           shape: {
-            type: 'circle',
+            type: "circle",
           },
           size: {
             random: true,
@@ -165,16 +153,10 @@ export default {
           },
         },
         detectRetina: true,
-      }
+      },
     };
   },
-  // computed: {
-  //   change() {
-  //     this.loading = false;
-  //   },
-  // },
   methods: {
-    
     start() {
       this.loading = true;
     },
@@ -199,17 +181,19 @@ export default {
 header {
   background: black;
   height: 100vh;
+  width: 100%;
 }
 .index {
   position: relative;
 }
 html,
 body {
-  width: 100%;
+  width: 100vh;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 main {
   background-color: black;
+  width: 100%;
 }
 .notre-mission {
   background-color: rgba(0, 0, 0, 0);
@@ -284,4 +268,5 @@ main {
   position: relative;
   z-index: 4;
 }
+
 </style>

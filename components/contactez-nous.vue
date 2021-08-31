@@ -1,6 +1,6 @@
 <template>
   <div class="write-us pt-4 pb-4">
-    <h3 class="title text-center"><img src="~/assets/img/title/contact-2-wealthtech.gif" height="300px" /></h3>
+    <h3 class="title text-center"><img src="~/assets/img/title/contact-2-wealthtech.gif" height="300px" width="100%" /></h3>
     <!-- <hr class="hr" /> -->
     <p v-if="errors.length">
     <b style="color:white"></b>
@@ -38,7 +38,7 @@
       action="#"
       @submit.prevent="send"
     >
-      <div class="input-columns">
+      <div class="input-columns"> 
         <div class="input-group">
           <input
             required="required"

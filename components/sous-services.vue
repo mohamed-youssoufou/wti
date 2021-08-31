@@ -1,6 +1,6 @@
 <template>
   <div class="container" :key="parentId">
-    <div class="row pl-2">
+    <div class="row pl-2 m-0">
       <h2 class="col-md-12 title text-center">
         {{ servicesFilter(parentId)[0].title }}
       </h2>
@@ -61,7 +61,7 @@ export default {
         arrows: true,
         responsive: [
           {
-            breakpoint: 376,
+            breakpoint: 414,
             settings: {
               slidesToShow: 1,
             },
@@ -260,6 +260,10 @@ a {
   border: 0px solid white !important;
   font-family: tahoma;
 }
-.slick-arrow {
+@media screen and (max-width: 540px) {
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    display: none !important;
+  }
 }
 </style>
