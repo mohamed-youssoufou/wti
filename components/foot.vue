@@ -22,10 +22,10 @@
               <div class="ft_about_icon float_left">
                 <!-- <i class="flaticon-user"></i> -->
                 <div class="ft_abt_text_wrapper">
-                  <img  />
+                  <img />
                   <img
-                    :src="require(`~/assets/img/services/image-footer.png`)" 
-                    height="150px" 
+                    :src="require(`~/assets/img/services/image-footer.png`)"
+                    height="150px"
                     width="150px"
                     class="img-responsive"
                     alt="logo"
@@ -42,48 +42,64 @@
 
             <ul>
               <li>
-                <a href="#"><i class="fa fa-angle-right"></i>Notre mission</a>
+                <NuxtLink class="nav-link p-0" to="/#notre_mission"
+                  ><i class="fa fa-angle-right"></i>Notre mission</NuxtLink
+                >
               </li>
 
               <li>
-                <a href="#"
-                  ><i class="fa fa-angle-right"></i>Qui sommes nous ?</a
+                <NuxtLink class="nav-link p-0" to="/#qui_sommes_nous"
+                  ><i class="fa fa-angle-right"></i>Qui sommes nous ?
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink class="nav-link p-0" to="/#nos_convictions"
+                  ><i class="fa fa-angle-right"></i>Nos convictions</NuxtLink
                 >
               </li>
               <li>
-                <a href="#"><i class="fa fa-angle-right"></i>Nos convictions</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-angle-right"></i>Nos services</a>
+                <NuxtLink to="/#nos-services-list"
+                ><i class="fa fa-angle-right"></i>Nos services</NuxtLink>
                 <ul class="s-service">
-                  <li><i class="fa fa-angle-right"></i>Nos offres</li>
+                  <li><i class="fa fa-angle-right"></i><NuxtLink to="/#nos-services"
+                >Nos offres</NuxtLink></li>
                   <li>
-                    <i class="fa fa-angle-right"></i>Conferences et formations
+                    <i class="fa fa-angle-right"></i><NuxtLink to="/#element"
+                >Conférences et formations blockchain</NuxtLink
+              >
                   </li>
                   <li>
-                    <i class="fa fa-angle-right"></i>Conseils et développement
+                    <i class="fa fa-angle-right"></i><NuxtLink to="/#element"
+                >Conseils et développement</NuxtLink
+              >
                   </li>
-                  <li><i class="fa fa-angle-right"></i>Crypto-actifs</li>
+                  <li><i class="fa fa-angle-right"></i><NuxtLink to="/#element"
+                >Crypto-actifs</NuxtLink
+              ></li>
                 </ul>
               </li>
               <li>
-                <a href="#"><i class="fa fa-angle-right"></i>Nos projets</a>
+                <a href="#"><i class="fa fa-angle-right"></i><NuxtLink class="nav-link p-0" to="/#nos_projets"
+              >Nos projets</NuxtLink
+            ></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-angle-right"></i>Blockchain</a>
+                <NuxtLink class="nav-link p-0" to="/definition"
+              ><i class="fa fa-angle-right"></i>Blockchain</NuxtLink>
                 <ul class="s-service">
-                  <li><i class="fa fa-angle-right"></i>Définition</li>
-                  <li>
-                    <i class="fa fa-angle-right"></i>Cas d'application
-                  </li>
-                  <li>
-                    <i class="fa fa-angle-right"></i>Lexique
-                  </li>
+                  <li><i class="fa fa-angle-right"></i><NuxtLink to="/definition">Définition</NuxtLink></li>
+                  <li><i class="fa fa-angle-right"></i><NuxtLink to="/cas-d-application"
+                >Cas d'application</NuxtLink
+              ></li>
+                  <li><i class="fa fa-angle-right"></i><NuxtLink to="/lexique"
+                >Lexique</NuxtLink
+              ></li>
                   <!-- <li><i class="fa fa-angle-right"></i>Crypto-actifs</li> -->
                 </ul>
               </li>
               <li>
-                <a href="#"><i class="fa fa-angle-right"></i>Contactez-nous</a>
+                <NuxtLink class="nav-link p-0" to="/#contactez_nous"
+              ><i class="fa fa-angle-right"></i>Contactez-nous</NuxtLink>
               </li>
             </ul>
           </div>
@@ -300,17 +316,17 @@ svg:not(:root) {
   color: #8a3ab9;
 }
 @media screen and (max-width: 540px) {
-  .ft_abt_text_wrapper{
+  .ft_abt_text_wrapper {
     display: flex;
     justify-content: center;
   }
-  .wrapper_second_useful>h4{
+  .wrapper_second_useful > h4 {
     text-align: center;
   }
-  .wrapper_second_useful.wrapper_second_useful_2>h4{
+  .wrapper_second_useful.wrapper_second_useful_2 > h4 {
     text-align: center;
   }
-  ul>li{
+  ul > li {
     text-align: center;
   }
 }
