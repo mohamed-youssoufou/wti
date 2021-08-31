@@ -125,6 +125,10 @@ export default {
           pass: 'Wealthtech2021'
         },
       },
+      common: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      }
     }],
   ],
 
