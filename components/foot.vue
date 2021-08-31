@@ -181,7 +181,8 @@
         </li>
         <li>
           <span>
-            © wealthtech Innovations 2020
+            © wealthtech Innovations 2021
+            <input type="hidden" value="build by Youssoufou my_linkdin: https://www.linkedin.com/in/youssoufou-mohamed-brice-lassissi-0a4b64189">
             <!-- <a href="#" target="_blank">wit</a> -->
           </span>
         </li>
