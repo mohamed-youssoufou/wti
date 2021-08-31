@@ -122,7 +122,7 @@ export default {
         port: 465,
         auth: {
           user: 'contact@wealthtechinnovations.com',
-          pass: 'Azer102385)'
+          pass: 'Wealthtech2021'
         },
       },
     }],

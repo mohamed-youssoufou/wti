@@ -9,10 +9,9 @@
         />
       </h2>
       <p class="btn-body-text">
-        À l'aune de la révolution numérique impulsée par le développement et
-        l’implémentation des nouvelles technologies, nous sommes convaincus que
-        les actifs numériques, le WEB3 et Les blockchains apportent des
-        solutions durables qui répondent à plusieurs grands enjeux actuels.
+        Dans l’optique d’implémenter la blockchain en Afrique, WEALTHTECH INNOVATIONS porte plusieurs projets innovants qui seront réalisés et développés par des étudiants et développeurs africains.<br />
+
+Ces projets innovants seront implémentés en utilisant les principes de conception de la blockchain. L’aboutissement de ces projets apportera des solutions pouvant répondre aux problématiques d’inclusion, de sécurité, de certification, de conservation des registres, de préservation des droits et de développement durable.
       </p>
     </div>
     <div>
