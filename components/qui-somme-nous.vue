@@ -1,9 +1,8 @@
 <template>
   <div class="container">
-    <div class="row m-0">
-      <h2 class="col-md-12 title"><h4 class="col-md-12 title"><img src="~/assets/img/title/qui-sommes.gif" height="300px" width="100%" /></h4></h2>
-      <div class="col-md-12">
-        <p class="btn-body-text">
+    <div class="row">
+      <h2 class="col-md-12 title"><h4 class="col-md-12 title"><img src="~/assets/img/title/qui-sommes.gif" height="300px" width="auto" /></h4></h2>
+        <p class="col-md-12 btn-body-text">
           Wealthtech innovations est une start-up spécialisée dans le
         développement technique d’applications blockchain et dans la promotion
         d’une nouvelle économie numérique.<br/> 
@@ -22,7 +21,6 @@
         projets en ce sens.
         </p>
       </div>
-    </div>
   </div>
 </template>
 
@@ -55,6 +53,11 @@ p.btn-body-text {
   color: #ffffff;
   margin-top: 0;
   width: 100%;
+}
+@media screen and (max-width: 540px) {
+  .title > h4 > img{
+   width: 100%;
+  }
 }
 @media screen and (min-width: 375px){
   .title {

@@ -107,7 +107,7 @@ export default {
       loop: true,
       delay: 75,
     });
-    console.log(typewriter);
+    // console.log(typewriter);
 
     typewriter
       .typeString("wealthtech innovations")
@@ -120,24 +120,24 @@ export default {
       .start();
   },
   created() {
-    if (process.browser) {
-      this.$nextTick(function () {
-        window.onscroll = function () {
-          console.log("oK");
-          let navbar = document.querySelector(".navbar");
-          let sticky = navbar.offsetTop;
-          if (window.pageYOffset > sticky) {
-            navbar.classList.add("sticky");
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        };
-      });
-    }
+    // if (process.browser) {
+    //   this.$nextTick(function () {
+    //     window.onscroll = function () {
+    //       // console.log("oK");
+    //       let navbar = document.querySelector(".navbar");
+    //       let sticky = navbar.offsetTop;
+    //       if (window.pageYOffset > sticky) {
+    //         navbar.classList.add("sticky");
+    //       } else {
+    //         navbar.classList.remove("sticky");
+    //       }
+    //     };
+    //   });
+    // }
   },
   methods: {
     changeService(id) {
-      console.log("id", id);
+      // console.log("id", id);
       this.$emit("myEvent", id);
     },
   },
@@ -175,7 +175,7 @@ export default {
   perspective: 1000px;
   transform-origin: top;
   border-bottom: 1px solid transparent;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #000000;
 }
 .navbar.sticky {
   background: #000000 !important;

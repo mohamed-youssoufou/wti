@@ -5,7 +5,7 @@
         {{ servicesFilter(parentId)[0].title }}
       </h2>
     </div>
-    <div>
+    <div class="h-100 w-100">
       <VueSlickCarousel v-bind="settings">
         <cardsmainelement
           v-for="service in servicesSousFiltered(parentId)"
@@ -16,6 +16,7 @@
           :detail="service.detail"
           :id="service.id"
           :icone="service.icone"
+          class="h-100"
         />
       </VueSlickCarousel>
     </div>
@@ -55,9 +56,9 @@ export default {
         slidesToShow: 3,
         slidesToScroll: 1,
         touchThreshold: 5,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnDotsHover: true,
+        pauseOnDotsHover: false,
         arrows: true,
         responsive: [
           {
@@ -230,7 +231,7 @@ Nos expertises sont au service de vos idées et de votre entreprise pour vous pe
 };
 </script>
 
-<style>
+<style >
 .title {
   font-family: fsl;
   font-weight: bolder;

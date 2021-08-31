@@ -2,7 +2,6 @@
   <div class="container nos-cas">
     <div class="row">
       <h2 class="col-md-12 text-center">Cas d'application</h2>
-      
     </div>
     <div class="h-100">
       <VueSlickCarousel v-bind="settings">
@@ -59,7 +58,7 @@ export default {
         touchThreshold: 5,
         autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnDotsHover: true,
+        pauseOnDotsHover: false,
         arrows: true,
         responsive: [
           {

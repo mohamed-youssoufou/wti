@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="index">
-    <loader v-show="loading" />
+    <loader v-if="loading" />
     <Particles id="tsparticles" :options="options" />
     <div class="flou"></div>
     <header>
@@ -14,7 +14,7 @@
         <foot />
       </section>
     </main>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
   </div>
 </template>
 

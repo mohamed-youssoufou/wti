@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row m-0">
       <div class="col-md-12 text-center">
-        <h2 class="col-md-12 title text-center"><img src="~/assets/img/title/blockchain.gif" height="300px" width="100%" /></h2>
+        <h2 class="col-md-12 title text-center"><img src="~/assets/img/title/blockchain.gif" height="300px" width="auto" /></h2>
       </div>
       <h2 class="col-md-12 text-center">Qu’est-ce que la Blockchain ?</h2>
       <p class="col-md-12 text-justify"><br/>
@@ -48,5 +48,10 @@ export default {
 <style scoped>
 .heightLight {
   color: #2a80b9;
+}
+@media screen and (max-width: 540px) {
+  .title > img{
+   width: 100%;
+  }
 }
 </style>

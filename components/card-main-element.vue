@@ -16,7 +16,10 @@
     </div> -->
     <div class="row" >
       <div class="col-md-12">
-        <div class="img" :style="{ backgroundImage: 'url(' +require(`~/assets/img/services/${img}`)+')' }"></div>
+        <!-- <div class="img" :style="{ backgroundImage: 'url(' +require(`~/assets/img/services/${img}`)+')' }"></div> -->
+        <div>
+          <img class="img" :src="require(`~/assets/img/services/${img}`)" />
+        </div>
       </div>
     </div>
     <div class="row">
@@ -112,6 +115,7 @@ export default {
   background-size: cover;
   height: 200px;
   border-radius: 10px;
+  width: 100%;
 }
 .card-text {
   color: #ffffff;
@@ -121,4 +125,5 @@ export default {
 .link-to {
   color: #515cf5;
 }
+
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div id="home w-100" class="index">
+  <div id="home" class="index">
     <loader v-if="loading" />
-    <!-- <Particles id="tsparticles" :options="particleOptions" /> -->
+    <Particles id="tsparticles" :options="particleOptions" />
     <div class="flou"></div>
     <header>
       <navBar @myEvent="pushToSousService" class="nav-bar" />
@@ -22,10 +22,10 @@
       </section>
       <section
         id="nos-services"
-        class="mt-4 qui-some-nous d-flex flex-column justify-content-center"
+        class="mt-4 ml-0 qui-some-nous d-flex flex-column justify-content-center"
       >
         <nos-services @myEvent="pushToSousService" class="nos-services" />
-      </section>
+      </section> 
       <section id="element" class="sous-services mt-4">
         <sous-services :parentId="parentId" />
       </section>

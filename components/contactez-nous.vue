@@ -1,6 +1,6 @@
 <template>
   <div class="write-us pt-4 pb-4">
-    <h3 class="title text-center"><img src="~/assets/img/title/contact-2-wealthtech.gif" height="300px" width="100%" /></h3>
+    <h3 class="title text-center"><img src="~/assets/img/title/contact-2-wealthtech.gif" height="300px" width="auto" /></h3>
     <!-- <hr class="hr" /> -->
     <p v-if="errors.length">
     <b style="color:white"></b>
@@ -144,7 +144,7 @@ export default {
           this.checkedName = [];
           this.content = "";
         } catch (error) {
-          console.log(error);
+          // console.log(error);
         }
       }
       this.loader = false;
@@ -305,6 +305,11 @@ textarea {
   margin: 0 auto 1em;
   max-width: 44.5em;
   padding: 0 1em;
+}
+@media screen and (max-width: 540px) {
+  .title > img{
+   width: 100%;
+  }
 }
 @media screen and (min-width: 375px) {
   .title {

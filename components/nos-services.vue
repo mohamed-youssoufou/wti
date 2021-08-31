@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <h2 class="col-md-12 title">
-        <img src="~/assets/img/title/nos-services-wealthtech.gif" height="300px" width="100%" />
+        <img src="~/assets/img/title/nos-services-wealthtech.gif" height="300px" width="auto" />
       </h2>
       <p class="col-md-12 btn-body-text">
         Wealthtech Innovations accompagne les particuliers, les associations,
@@ -12,7 +12,7 @@
         les actifs numériques.
       </p>
     </div>
-    <div class="row">
+    <div class="row m-0">
       <card-main-element
         @myEventBase="changeService"
         v-for="service in ourSevices"
@@ -106,6 +106,11 @@ p.btn-body-text {
 }
 a {
   color: royalblue;
+}
+@media screen and (max-width: 540px) {
+  .title > img{
+   width: 100%;
+  }
 }
 @media screen and (min-width: 375px) {
   .title {

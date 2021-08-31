@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row m-0">
+    <div class="row">
       <h2 class="col-md-12 d-flex title">
         <div class="w-50 elt">Le lexique de la blockchain</div>
         <div class="w-50 elt">

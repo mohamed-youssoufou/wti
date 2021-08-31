@@ -20,15 +20,15 @@ export default {
     //   async: true,
     // },
     script: [
-      // {
-      //   src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
-      //   type: "text/javascript"
-      // },
-      // {
-      //   src:
-      //     "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
-      //   type: "text/javascript"
-      // },
+      {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript"
+      },
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+        type: "text/javascript"
+      },
       {
         src:
           "https://unpkg.com/typewriter-effect@latest/dist/core.js",
@@ -66,7 +66,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-
+    // '@nuxtjs/ngrok',
   ],
 
   axios: {
@@ -122,6 +122,11 @@ export default {
       },
     }],
   ],
+
+  server: {     
+    port: 8000, // default: 3000     
+    host: '0.0.0.0', // default: localhost   
+  }, 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

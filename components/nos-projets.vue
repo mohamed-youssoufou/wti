@@ -1,7 +1,13 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="col-md-12 title text-center"><img src="~/assets/img/title/nos-projets-wealthtech.gif" height="300px" width="100%" /></h2>
+      <h2 class="col-md-12 title text-center">
+        <img
+          src="~/assets/img/title/nos-projets-wealthtech.gif"
+          height="300px"
+          width="auto"
+        />
+      </h2>
       <p class="btn-body-text">
         À l'aune de la révolution numérique impulsée par le développement et
         l’implémentation des nouvelles technologies, nous sommes convaincus que
@@ -41,9 +47,9 @@ export default {
         slidesToShow: 4,
         slidesToScroll: 1,
         touchThreshold: 5,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnDotsHover: true,
+        pauseOnDotsHover: false,
         arrows: true,
         responsive: [
           {
@@ -94,7 +100,6 @@ export default {
 </script>
 
 <style scoped>
-
 .h-30 {
   height: 30%;
 }
@@ -184,6 +189,11 @@ p.btn-body-text {
 }
 .project {
   width: 25%;
+}
+@media screen and (max-width: 540px) {
+  .title > img{
+   width: 100%;
+  }
 }
 @media screen and (max-width: 375px) {
   .title {
