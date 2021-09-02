@@ -84,6 +84,8 @@ export default {
 
   axios: {
     baseURL: process.env.BASE_URL,
+    proxyHeaders: false,
+    credentials: false
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
