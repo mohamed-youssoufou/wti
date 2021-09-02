@@ -20,7 +20,15 @@ export default {
     //   async: true,
     // },
     script: [
-
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-7LPSCGVLHZ",
+        type: "text/javascript",
+        async: true
+      },
+      {
+        src: "/js/google-tag-manager.js",
+        type: "text/javascript",
+      },
       {
         src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
         type: "text/javascript"

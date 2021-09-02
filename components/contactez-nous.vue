@@ -30,6 +30,7 @@
       </div>
     </div>
     <loader-send-mail v-if="loader" />
+    <SuccessError :successORnot="successORnot" v-if="iconeSendStatus"/>
     <form
       class="write-us__form"
       id="new_contact_us_form"
@@ -89,13 +90,18 @@
 
 <script>
 import LoaderSendMail from "./loader-send-mail.vue";
+import SuccessError from "./success-error.vue";
+
 export default {
   components: {
     LoaderSendMail,
+    SuccessError
   },
   data() {
     return {
       loader: false,
+      iconeSendStatus: false,
+      successORnot: true,
       objects: [
         { id: 1, value: "Déploiement de projet blockchain" },
 
@@ -142,14 +148,20 @@ export default {
           });
           this.email = "";
           this.checkedName = [];
-          this.content = "";
+          this.content = ""
           this.loader = false;
+          this.successORnot = true
+          this.iconeSendStatus = true
         } catch (error) {
           // console.log(error);
           this.loader = false;
+          this.successORnot = false
+          this.iconeSendStatus = true
         }
       }else{
         this.loader = false;
+        this.successORnot = false
+        this.iconeSendStatus = true
       }
       
       e.preventDefault();
