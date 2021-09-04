@@ -129,6 +129,7 @@ export default {
     async send(e) {
       this.errors = [];
       this.loader = true;
+      this.successORnot = true;
 
       if (!this.checkedName.length) {
         this.errors.push("Cocher les/l'objet de la requête!");
