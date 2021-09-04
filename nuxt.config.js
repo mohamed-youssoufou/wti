@@ -83,12 +83,24 @@ export default {
   ],
 
   axios: {
-    baseURL: process.env.BASE_URL,
-    proxy: true
+    // baseURL: 'wealthtechinnovation.com'
+    baseURL: "212.227.212.33:443",
+    // proxy: true
+  },
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.BROWSER_BASE_URL
+    }
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL
+    }
   },
 
   proxy: {
-    '/api/': { target: 'wealthtechinnovation.com', pathRewrite: {'^/api/': ''} }
+    '/api/': { target: '', pathRewrite: { '^/api/': '' } }
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -146,8 +158,8 @@ export default {
   ],
 
   // server: {
-    // port: 8000, // default: 3000     
-    // host: '0.0.0.0', // default: localhost   
+  // port: 8000, // default: 3000     
+  // host: '0.0.0.0', // default: localhost   
   //},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
