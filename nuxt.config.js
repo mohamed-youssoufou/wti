@@ -84,6 +84,11 @@ export default {
 
   axios: {
     baseURL: process.env.BASE_URL,
+    proxy: true
+  },
+
+  proxy: {
+    '/api/': { target: 'wealthtechinnovation.com', pathRewrite: {'^/api/': ''} }
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
