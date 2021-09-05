@@ -1,12 +1,12 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  //target: 'server',
+  //target: 'static',
   ssr: true,
-  generate: {
-    minify: {
-      collapseWhitespace: true
-    }
-  },
+  // generate: {
+  //   minify: {
+  //     collapseWhitespace: true
+  //   }
+  // },
   // loading: '~/components/loader.vue',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -72,7 +72,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/particles.js'
+    { src: '~/plugins/particles.js', mode: 'client' }, // only
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

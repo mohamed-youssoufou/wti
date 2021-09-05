@@ -25,7 +25,7 @@
               >Qui sommes nous ?</NuxtLink
             ></b-nav-item
           >
-          <b-nav-item oki href="#" v-scroll-to="'#nos_convictions'"
+          <b-nav-item href="#" v-scroll-to="'#nos_convictions'"
             ><NuxtLink class="nav-link p-0" to="/#nos_convictions"
               >Nos convictions</NuxtLink
             ></b-nav-item

@@ -22,10 +22,17 @@
       </section>
       <section
         id="nos-services"
-        class="mt-4 ml-0 qui-some-nous d-flex flex-column justify-content-center"
+        class="
+          mt-4
+          ml-0
+          qui-some-nous
+          d-flex
+          flex-column
+          justify-content-center
+        "
       >
         <nos-services @myEvent="pushToSousService" class="nos-services" />
-      </section> 
+      </section>
       <section id="element" class="sous-services mt-4">
         <sous-services :parentId="parentId" />
       </section>
@@ -42,9 +49,7 @@
       >
         <nos-projets />
       </section>
-      <!-- <section class="google-map d-flex flex-column justify-content-center">
-        <google-map class="h-100" />
-      </section> -->
+
       <section
         id="contactez_nous"
         class="contactez-nous d-flex flex-column justify-content-center"
@@ -56,7 +61,6 @@
         <foot />
       </section>
     </main>
-    <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
   </div>
 </template>
 
@@ -268,5 +272,4 @@ main {
   position: relative;
   z-index: 4;
 }
-
 </style>
