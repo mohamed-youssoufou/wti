@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  target: 'static',
   generate: {
     minify: {
       collapseWhitespace: true
@@ -84,8 +84,6 @@ export default {
 
   axios: {
     baseURL: "https://www.wealthtechinnovation.com/",
-    // proxyHeaders: false,
-    // credentials: false
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -134,10 +132,6 @@ export default {
           user: 'contact@wealthtechinnovations.com',
           pass: 'Wealthtech2021'
         },
-      },
-      common: {
-        'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/json',
       }
     }],
   ],
