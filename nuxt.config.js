@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
   generate: {
     minify: {
       collapseWhitespace: true
@@ -83,7 +83,7 @@ export default {
   ],
 
   axios: {
-    baseURL: process.env.BASE_URL,
+    baseURL: "https://www.wealthtechinnovation.com/",
     // proxyHeaders: false,
     // credentials: false
   },
