@@ -1,6 +1,5 @@
 <template>
   <div id="home" class="index">
-    <loader v-if="loading" />
     <Particles id="tsparticles" :options="particleOptions" />
     <div class="flou"></div>
     <header>
@@ -68,15 +67,9 @@
 import contactezNous from "../components/contactez-nous.vue";
 export default {
   components: { contactezNous },
-  mounted() {
-    this.$nextTick(function () {
-      this.finish();
-    });
-  },
   data() {
     return {
       parentId: 1,
-      loading: true,
       particleOptions: {
         background: {
           color: {
@@ -161,12 +154,6 @@ export default {
     };
   },
   methods: {
-    start() {
-      this.loading = true;
-    },
-    finish() {
-      this.loading = false;
-    },
     pushToSousService(id) {
       this.parentId = id;
     },

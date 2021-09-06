@@ -1,6 +1,5 @@
 <template>
   <div id="home" class="index">
-    <loader v-if="loading" />
     <Particles id="tsparticles" :options="options" />
     <div class="flou"></div>
     <header>
@@ -25,9 +24,6 @@ import VueScrollTo from "vue-scrollto";
 export default {
   mounted() {
     // setTimeout(() => this.finish(), 2000);
-    this.$nextTick(function () {
-      this.finish();
-    });
   },
   data() {
     return {
@@ -116,11 +112,6 @@ export default {
       },
     };
   },
-  computed: {
-    change() {
-      this.loading = false;
-    },
-  },
   methods: {
     // gtag() {
     //   dataLayer.push(arguments);
@@ -132,12 +123,6 @@ export default {
 
     //   this.gtag("config", "G-7LPSCGVLHZ");
     // },
-    start() {
-      this.loading = true;
-    },
-    finish() {
-      this.loading = false;
-    },
     pushToSousService(id) {
       this.parentId = id;
     },

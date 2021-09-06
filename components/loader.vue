@@ -1,5 +1,5 @@
-<template>
-  <div class="loader">
+<template lang="html">
+  <div class="loader" v-if="loading">
     <div class="content">
       <div class="loading">
         <p>chargement</p>
@@ -10,11 +10,23 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    loading: false,
+  }),
+  methods: {
+    start() {
+      this.loading = true;
+    },
+    finish() {
+      this.loading = false;
+    },
+  },
+};
 </script>
 
 <style lang="scss">
-.loader{
+.loader {
   position: fixed;
   z-index: 1000;
   width: 100%;

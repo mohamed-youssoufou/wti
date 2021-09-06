@@ -35,7 +35,6 @@ export default {
   data() {
     return {
       parentId: 1,
-      loading: true,
       options: {
         background: {
           color: {
@@ -119,11 +118,6 @@ export default {
       },
     };
   },
-  computed: {
-    change() {
-      this.loading = false;
-    },
-  },
   methods: {
     // gtag() {
     //   dataLayer.push(arguments);
@@ -135,12 +129,6 @@ export default {
 
     //   this.gtag("config", "G-7LPSCGVLHZ");
     // },
-    start() {
-      this.loading = true;
-    },
-    finish() {
-      this.loading = false;
-    },
     pushToSousService(id) {
       this.parentId = id;
     },

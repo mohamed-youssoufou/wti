@@ -2,6 +2,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   //target: 'static',
   ssr: true,
+  loading: '~/components/loader.vue',
   // generate: {
   //   minify: {
   //     collapseWhitespace: true
@@ -84,7 +85,7 @@ export default {
   ],
 
   axios: {
-    baseURL: process.env.BASE_URL,
+    baseURL: "https://www.wealthtechinnovation.com",
     // proxyHeaders: false,
     // credentials: false
   },
