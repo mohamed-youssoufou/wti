@@ -85,7 +85,7 @@ export default {
   ],
 
   axios: {
-    baseURL: "https://www.wealthtechinnovation.com",
+    baseURL: "https://www.wealthtechinnovations.com",
     // proxyHeaders: false,
     // credentials: false
   },
